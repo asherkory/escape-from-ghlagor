@@ -1,0 +1,15 @@
+{:uriI"ófile://app/assets/javascripts/templates/home/story/inventory.html?type=text/ng-html&id=da6f61d4ddd31697519af5c49447e075eadbed45a25e0cbc71f8e7ceeb44c11b:ET:load_pathI"app/assets/javascripts;T:filenameI"?app/assets/javascripts/templates/home/story/inventory.html;T:	nameI"#templates/home/story/inventory;T:logical_pathI"(templates/home/story/inventory.html;T:content_typeI"text/ng-html;T:sourceI"∆<h3>Inventory</h3>
+
+<ul>
+  <li ng-repeat="item in ctrl.items">
+    <item-summary
+      name="item.name"
+      category="item.inventory_category"
+      id="item.id">
+    </item-summary>
+  </li>
+</ul>;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Mfile-digest://app/assets/javascripts/templates/home/story/inventory.html;TT:charsetI"
+utf-8;F:digest"%˝¿ÿËkdìÜvÚ‚‡÷^qbcë`%πsá49”xt"¥n:lengthi∆:dependencies_digest"%3˝5‘gAOÌô≤÷5J‚k≥£Z#≤;u§‰¶ã\:idI"Eda6f61d4ddd31697519af5c49447e075eadbed45a25e0cbc71f8e7ceeb44c11b;F:
+mtimel+ùÂZW

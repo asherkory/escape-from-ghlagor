@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   root 'application#index'
 
   namespace :api, defaults:{format: :json} do 
-    resources :storycards
+    resources :storycards, only: [:show]
+    resources :items, except: [:edit, :new]
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

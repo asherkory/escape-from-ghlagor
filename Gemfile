@@ -16,6 +16,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bower-rails'
 
+gem 'responders', '~> 2.0'
+
+gem 'angular-rails-templates'
+
+gem 'active_model_serializers'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -28,6 +34,8 @@ gem 'bower-rails'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'pry'
+  gem 'pry-rails'
 end
 
 group :development do

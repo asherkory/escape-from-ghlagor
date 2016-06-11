@@ -1,0 +1,11 @@
+<h3>Inventory</h3>
+
+<ul>
+  <li ng-repeat="item in ctrl.currentItems">
+    <item-summary
+      name="item.name"
+      category="item.inventory_category"
+      id="item.id">
+    </item-summary>
+  </li>
+</ul>
