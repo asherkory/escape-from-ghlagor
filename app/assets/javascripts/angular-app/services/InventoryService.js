@@ -1,4 +1,4 @@
-function InventoryService (Item) {
+function InventoryService (Item, $window) {
   var srv = this;
 
   srv.currentItems = [];
@@ -6,6 +6,15 @@ function InventoryService (Item) {
   srv.addToInventory = function (itemId) {
     var item = Item.get({ id: itemId });
     srv.currentItems.push(item);
+    $window.alert("Item added!");
+  };
+
+  srv.removeFromInventory = function (itemId) {
+    var position = srv.currentItems.findIndex(function (item) {
+      return item.id === itemId;
+    });
+    srv.currentItems.splice(position, 1);
+    $window.alert("Item removed!")
   };
 
   srv.getCurrentItems = function () {

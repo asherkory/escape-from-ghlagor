@@ -5387,3 +5387,784 @@ Processing by Api::ItemsController#show as JSON
   Parameters: {"id"=>"2"}
   [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 2]]
 Completed 200 OK in 9ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/items/2.json" for ::1 at 2016-06-11 10:51:15 -0400
+Processing by Api::ItemsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mItem Load (0.7ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 52ms (Views: 22.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-06-11 11:05:53 -0400
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 660ms (Views: 659.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular-app/directives/itemSummary.self-48b6e0b0f318cdaaaa419144ed5430a65a539d086744bb5e822bc73b1530291f.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/angular-app/app.self-1b5308b3ba41f1c88254e36be9cb346eaf4a886271d45147e2dea3a769ed5db9.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/angular-app/controllers/AboutController.self-47a796fa4b718540acb573e4c9066103f0a80bab0f98df56d4a46e14fda47063.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/angular-rails-templates.self-f73a25f00ce684992b28562a01665855f2aabcedd405901b89b47873f76ca8d1.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-75b555bd54e64f7d2b5892cbb6def68576df012a8139b5917c51407de696d0de.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.self-c1f038d63d4a7f5c3f49e218cc670132decbbb4049cc722ac83c4d0b2786cad4.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/angular-app/controllers/InventoryController.self-0af03289f742b9b8d6a5aafd2123ff7b6a2a876e6836fb1acf73ab16ec714abb.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/angular-app/controllers/ItemController.self-c5f8b1ce0c55bcd1709836abe0895053076e84027444ae3afc6ceefc12719868.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/angular-app/controllers/StoryController.self-4ad68956292cec7dde3aa7d56f7e630e14e62d1ac38f82296f2850b7ea5e39b1.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/angular-app/controllers/HomeController.self-d63839b687f6d5107624924c1e2db8ca064ef246631dcf53ee87c8dfae51c942.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/angular-app/directives/itemDetail.self-97c4d0d721cf767690109eb1d522fea057fb4f4fe690ca59a07f693a35766c64.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/angular-app/directives/storycardCard.self-c56ae0c6ddc93eff7ce6dcd4fd05a69fbba2bb67146da9ad96f36439c09d6938.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/angular-app/services/InventoryService.self-7f8bbf164b5556f6b2bbe9da9b4d920a60e49445441b0c15a7cdde2154d1bdbe.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/angular-app/models/Item.self-09c73f48a108f43390557c5cb05b3f9d32c94825845dc232f0be9f8994b215a3.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/angular-app/models/Game.self-a5533a814e971b141e10dae488bcebba9d9d3364909ecc8112310b7a4c329b2c.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/templates/home.self-79f0230a1b3e892fe70c64a5cc8348f3a9632bd62861ebded0df9db74ed207ba.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/angular-app/models/Storycard.self-67a18db137ffa354d9c5ace24b7264fe548c5314f779224918d2373e501694a1.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/templates/home/about.self-deac94d664b76163051e7725f96076ae99dbd6896f5f45a6a154aa8249868ad8.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/templates/home/story/inventory.self-4e23f39f544f00187d3ecc156a4bb6985743b8cb5cda05518c7a603d61c6b064.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/templates/home/story.self-7599ba6c2f4ef9636adcf4e854e6a4fc6e0e4059042bd1f40c6ba45b7e854184.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/templates/home/story/item.self-bfcb0564dd7ca339fd5d52af49e78096f12c0ce973e94d730b906425e4f98ea2.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-06-11 11:05:54 -0400
+
+
+Started GET "/api/storycards/1.json" for ::1 at 2016-06-11 11:05:54 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mStorycard Load (0.2ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?  [["storycard_id", 1]]
+  [1m[36mStorycard Load (0.2ms)[0m  [1mSELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?[0m  [["parent_id", 1]]
+Completed 200 OK in 13ms (Views: 5.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/storycards/2.json" for ::1 at 2016-06-11 11:05:59 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mStorycard Load (0.1ms)[0m  SELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?[0m  [["storycard_id", 2]]
+  [1m[35mStorycard Load (0.1ms)[0m  SELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?  [["parent_id", 2]]
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/items/3.json" for ::1 at 2016-06-11 11:06:00 -0400
+Processing by Api::ItemsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 13ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-06-11 11:06:32 -0400
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 518ms (Views: 517.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-75b555bd54e64f7d2b5892cbb6def68576df012a8139b5917c51407de696d0de.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular-app/app.self-1b5308b3ba41f1c88254e36be9cb346eaf4a886271d45147e2dea3a769ed5db9.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular-app/controllers/AboutController.self-47a796fa4b718540acb573e4c9066103f0a80bab0f98df56d4a46e14fda47063.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.self-c1f038d63d4a7f5c3f49e218cc670132decbbb4049cc722ac83c4d0b2786cad4.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular-app/controllers/HomeController.self-d63839b687f6d5107624924c1e2db8ca064ef246631dcf53ee87c8dfae51c942.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular-rails-templates.self-f73a25f00ce684992b28562a01665855f2aabcedd405901b89b47873f76ca8d1.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular-app/directives/itemSummary.self-dbf509dd068c100cd1c0a9d571fe8a6c06bc50c86bb26f8c80eb4ba9b25c4190.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular-app/controllers/ItemController.self-c5f8b1ce0c55bcd1709836abe0895053076e84027444ae3afc6ceefc12719868.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular-app/controllers/StoryController.self-4ad68956292cec7dde3aa7d56f7e630e14e62d1ac38f82296f2850b7ea5e39b1.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular-app/directives/itemDetail.self-97c4d0d721cf767690109eb1d522fea057fb4f4fe690ca59a07f693a35766c64.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular-app/directives/storycardCard.self-c56ae0c6ddc93eff7ce6dcd4fd05a69fbba2bb67146da9ad96f36439c09d6938.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular-app/controllers/InventoryController.self-0af03289f742b9b8d6a5aafd2123ff7b6a2a876e6836fb1acf73ab16ec714abb.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular-app/models/Item.self-09c73f48a108f43390557c5cb05b3f9d32c94825845dc232f0be9f8994b215a3.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular-app/models/Game.self-a5533a814e971b141e10dae488bcebba9d9d3364909ecc8112310b7a4c329b2c.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular-app/services/InventoryService.self-7f8bbf164b5556f6b2bbe9da9b4d920a60e49445441b0c15a7cdde2154d1bdbe.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/angular-app/models/Storycard.self-67a18db137ffa354d9c5ace24b7264fe548c5314f779224918d2373e501694a1.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/templates/home.self-79f0230a1b3e892fe70c64a5cc8348f3a9632bd62861ebded0df9db74ed207ba.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/templates/home/about.self-deac94d664b76163051e7725f96076ae99dbd6896f5f45a6a154aa8249868ad8.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/templates/home/story/inventory.self-4e23f39f544f00187d3ecc156a4bb6985743b8cb5cda05518c7a603d61c6b064.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/templates/home/story/item.self-bfcb0564dd7ca339fd5d52af49e78096f12c0ce973e94d730b906425e4f98ea2.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/assets/templates/home/story.self-7599ba6c2f4ef9636adcf4e854e6a4fc6e0e4059042bd1f40c6ba45b7e854184.js?body=1" for ::1 at 2016-06-11 11:06:33 -0400
+
+
+Started GET "/api/storycards/1.json" for ::1 at 2016-06-11 11:06:33 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mStorycard Load (0.1ms)[0m  SELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?[0m  [["storycard_id", 1]]
+  [1m[35mStorycard Load (0.1ms)[0m  SELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?  [["parent_id", 1]]
+Completed 200 OK in 10ms (Views: 4.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/storycards/2.json" for ::1 at 2016-06-11 11:06:38 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mStorycard Load (0.1ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?  [["storycard_id", 2]]
+  [1m[36mStorycard Load (0.1ms)[0m  [1mSELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?[0m  [["parent_id", 2]]
+Completed 200 OK in 7ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/items/2.json" for ::1 at 2016-06-11 11:06:41 -0400
+Processing by Api::ItemsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/items/4.json" for ::1 at 2016-06-11 11:08:07 -0400
+Processing by Api::ItemsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/items/4.json" for ::1 at 2016-06-11 11:09:09 -0400
+Processing by Api::ItemsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-06-11 11:09:11 -0400
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 453ms (Views: 453.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/angular-app/app.self-1b5308b3ba41f1c88254e36be9cb346eaf4a886271d45147e2dea3a769ed5db9.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-75b555bd54e64f7d2b5892cbb6def68576df012a8139b5917c51407de696d0de.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/angular-rails-templates.self-f73a25f00ce684992b28562a01665855f2aabcedd405901b89b47873f76ca8d1.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.self-c1f038d63d4a7f5c3f49e218cc670132decbbb4049cc722ac83c4d0b2786cad4.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/angular-app/controllers/AboutController.self-47a796fa4b718540acb573e4c9066103f0a80bab0f98df56d4a46e14fda47063.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/angular-app/controllers/HomeController.self-d63839b687f6d5107624924c1e2db8ca064ef246631dcf53ee87c8dfae51c942.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/angular-app/controllers/ItemController.self-c5f8b1ce0c55bcd1709836abe0895053076e84027444ae3afc6ceefc12719868.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/angular-app/controllers/InventoryController.self-0af03289f742b9b8d6a5aafd2123ff7b6a2a876e6836fb1acf73ab16ec714abb.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/angular-app/controllers/StoryController.self-4ad68956292cec7dde3aa7d56f7e630e14e62d1ac38f82296f2850b7ea5e39b1.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/angular-app/directives/itemSummary.self-dbf509dd068c100cd1c0a9d571fe8a6c06bc50c86bb26f8c80eb4ba9b25c4190.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/angular-app/directives/itemDetail.self-97c4d0d721cf767690109eb1d522fea057fb4f4fe690ca59a07f693a35766c64.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/angular-app/directives/storycardCard.self-16c1ade490e18e524a214d1d9956d53cfeba9bd6949a422e65675c459e8f94b8.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/angular-app/models/Game.self-a5533a814e971b141e10dae488bcebba9d9d3364909ecc8112310b7a4c329b2c.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/angular-app/models/Item.self-09c73f48a108f43390557c5cb05b3f9d32c94825845dc232f0be9f8994b215a3.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/templates/home.self-79f0230a1b3e892fe70c64a5cc8348f3a9632bd62861ebded0df9db74ed207ba.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/angular-app/services/InventoryService.self-6bc1a4ff63d72c8e5f3af67be1897991f4cd38e1eef3e782eda86cd850e0d2eb.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/templates/home/about.self-deac94d664b76163051e7725f96076ae99dbd6896f5f45a6a154aa8249868ad8.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/angular-app/models/Storycard.self-67a18db137ffa354d9c5ace24b7264fe548c5314f779224918d2373e501694a1.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/templates/home/story.self-7599ba6c2f4ef9636adcf4e854e6a4fc6e0e4059042bd1f40c6ba45b7e854184.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/templates/home/story/inventory.self-4e23f39f544f00187d3ecc156a4bb6985743b8cb5cda05518c7a603d61c6b064.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/templates/home/story/item.self-bfcb0564dd7ca339fd5d52af49e78096f12c0ce973e94d730b906425e4f98ea2.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-06-11 11:09:12 -0400
+
+
+Started GET "/api/storycards/1.json" for ::1 at 2016-06-11 11:09:12 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mStorycard Load (0.2ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?  [["storycard_id", 1]]
+  [1m[36mStorycard Load (0.1ms)[0m  [1mSELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?[0m  [["parent_id", 1]]
+Completed 200 OK in 9ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/storycards/2.json" for ::1 at 2016-06-11 11:09:14 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mStorycard Load (0.1ms)[0m  SELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?[0m  [["storycard_id", 2]]
+  [1m[35mStorycard Load (0.4ms)[0m  SELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?  [["parent_id", 2]]
+Completed 200 OK in 11ms (Views: 5.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/items/2.json" for ::1 at 2016-06-11 11:09:17 -0400
+Processing by Api::ItemsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-06-11 11:09:29 -0400
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 581ms (Views: 580.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-75b555bd54e64f7d2b5892cbb6def68576df012a8139b5917c51407de696d0de.js?body=1" for ::1 at 2016-06-11 11:09:29 -0400
+
+
+Started GET "/assets/angular/angular.self-5592af530dae1104bb0e7213d999575dc62b42524c5fc77e1401fbcac313d459.js?body=1" for ::1 at 2016-06-11 11:09:29 -0400
+
+
+Started GET "/assets/angular-rails-templates.self-f73a25f00ce684992b28562a01665855f2aabcedd405901b89b47873f76ca8d1.js?body=1" for ::1 at 2016-06-11 11:09:29 -0400
+
+
+Started GET "/assets/angular-app/app.self-1b5308b3ba41f1c88254e36be9cb346eaf4a886271d45147e2dea3a769ed5db9.js?body=1" for ::1 at 2016-06-11 11:09:29 -0400
+
+
+Started GET "/assets/angular-app/controllers/AboutController.self-47a796fa4b718540acb573e4c9066103f0a80bab0f98df56d4a46e14fda47063.js?body=1" for ::1 at 2016-06-11 11:09:29 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.self-c1f038d63d4a7f5c3f49e218cc670132decbbb4049cc722ac83c4d0b2786cad4.js?body=1" for ::1 at 2016-06-11 11:09:29 -0400
+
+
+Started GET "/assets/angular-app/controllers/HomeController.self-d63839b687f6d5107624924c1e2db8ca064ef246631dcf53ee87c8dfae51c942.js?body=1" for ::1 at 2016-06-11 11:09:29 -0400
+
+
+Started GET "/assets/angular-app/controllers/InventoryController.self-0af03289f742b9b8d6a5aafd2123ff7b6a2a876e6836fb1acf73ab16ec714abb.js?body=1" for ::1 at 2016-06-11 11:09:29 -0400
+
+
+Started GET "/assets/angular-app/controllers/ItemController.self-c5f8b1ce0c55bcd1709836abe0895053076e84027444ae3afc6ceefc12719868.js?body=1" for ::1 at 2016-06-11 11:09:29 -0400
+
+
+Started GET "/assets/angular-app/controllers/StoryController.self-4ad68956292cec7dde3aa7d56f7e630e14e62d1ac38f82296f2850b7ea5e39b1.js?body=1" for ::1 at 2016-06-11 11:09:29 -0400
+
+
+Started GET "/assets/angular-app/directives/itemDetail.self-97c4d0d721cf767690109eb1d522fea057fb4f4fe690ca59a07f693a35766c64.js?body=1" for ::1 at 2016-06-11 11:09:29 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-11 11:09:29 -0400
+
+
+Started GET "/assets/angular-app/directives/itemSummary.self-dbf509dd068c100cd1c0a9d571fe8a6c06bc50c86bb26f8c80eb4ba9b25c4190.js?body=1" for ::1 at 2016-06-11 11:09:29 -0400
+
+
+Started GET "/assets/angular-app/models/Game.self-a5533a814e971b141e10dae488bcebba9d9d3364909ecc8112310b7a4c329b2c.js?body=1" for ::1 at 2016-06-11 11:09:29 -0400
+
+
+Started GET "/assets/angular-app/models/Item.self-09c73f48a108f43390557c5cb05b3f9d32c94825845dc232f0be9f8994b215a3.js?body=1" for ::1 at 2016-06-11 11:09:30 -0400
+
+
+Started GET "/assets/angular-app/directives/storycardCard.self-16c1ade490e18e524a214d1d9956d53cfeba9bd6949a422e65675c459e8f94b8.js?body=1" for ::1 at 2016-06-11 11:09:30 -0400
+
+
+Started GET "/assets/angular-app/models/Storycard.self-67a18db137ffa354d9c5ace24b7264fe548c5314f779224918d2373e501694a1.js?body=1" for ::1 at 2016-06-11 11:09:30 -0400
+
+
+Started GET "/assets/templates/home.self-79f0230a1b3e892fe70c64a5cc8348f3a9632bd62861ebded0df9db74ed207ba.js?body=1" for ::1 at 2016-06-11 11:09:30 -0400
+
+
+Started GET "/assets/templates/home/about.self-deac94d664b76163051e7725f96076ae99dbd6896f5f45a6a154aa8249868ad8.js?body=1" for ::1 at 2016-06-11 11:09:30 -0400
+
+
+Started GET "/assets/angular-app/services/InventoryService.self-7fe65b4c95ce9706fa374fbc8296af8d824957f8179a3a8e58972530bcca2402.js?body=1" for ::1 at 2016-06-11 11:09:30 -0400
+
+
+Started GET "/assets/templates/home/story.self-7599ba6c2f4ef9636adcf4e854e6a4fc6e0e4059042bd1f40c6ba45b7e854184.js?body=1" for ::1 at 2016-06-11 11:09:30 -0400
+
+
+Started GET "/assets/templates/home/story/inventory.self-4e23f39f544f00187d3ecc156a4bb6985743b8cb5cda05518c7a603d61c6b064.js?body=1" for ::1 at 2016-06-11 11:09:30 -0400
+
+
+Started GET "/assets/templates/home/story/item.self-bfcb0564dd7ca339fd5d52af49e78096f12c0ce973e94d730b906425e4f98ea2.js?body=1" for ::1 at 2016-06-11 11:09:30 -0400
+
+
+Started GET "/assets/application.self-7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3.js?body=1" for ::1 at 2016-06-11 11:09:30 -0400
+
+
+Started GET "/api/storycards/1.json" for ::1 at 2016-06-11 11:09:30 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mStorycard Load (0.1ms)[0m  SELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?[0m  [["storycard_id", 1]]
+  [1m[35mStorycard Load (0.1ms)[0m  SELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?  [["parent_id", 1]]
+Completed 200 OK in 10ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/storycards/2.json" for ::1 at 2016-06-11 11:09:32 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mStorycard Load (0.1ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?  [["storycard_id", 2]]
+  [1m[36mStorycard Load (0.3ms)[0m  [1mSELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?[0m  [["parent_id", 2]]
+Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/items/2.json" for ::1 at 2016-06-11 11:09:37 -0400
+Processing by Api::ItemsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+  [1m[36mStorycard Load (0.2ms)[0m  [1mSELECT  "storycards".* FROM "storycards"  ORDER BY "storycards"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "storycards" SET "content" = ?, "updated_at" = ? WHERE "storycards"."id" = ?[0m  [["content", "The year is 2502. Humanity is young, in galactic terms: although their colonies have spread across the galaxy, they are still an Apprentice species, a minor player on the galactic stage. Older races like the lizard-like Nekodiim and the moody Volarians run the Council, and so there is a semblance of peace and order across the stars. But the galaxy is a big place…\n<br><br>\nThere are many ways for a lone sapient to fall through the cracks.\n<br><br>\nWelcome to the prison moon Ghlagor. It's not a particularly pleasant place: scant atmosphere, dry and dusty underground facilities, stern Volarian guards. You may have been imprisoned here justly, or unjustly — but now it’s time to leave. You've been preparing for your escape."], ["updated_at", "2016-06-11 15:23:38.175821"], ["id", 1]]
+  [1m[35m (1.5ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2016-06-11 11:23:57 -0400
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 999ms (Views: 996.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-75b555bd54e64f7d2b5892cbb6def68576df012a8139b5917c51407de696d0de.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.self-c1f038d63d4a7f5c3f49e218cc670132decbbb4049cc722ac83c4d0b2786cad4.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular/angular.self-a3680fff57179d0080f9d5748ca2a23e287fbbf4425e8199ec882f4c37ff01f7.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-sanitize/angular-sanitize.self-e1040ae16741ecd24a18763044d880d8f05a8128fb988b4c50988631c7f6eee5.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-rails-templates.self-f73a25f00ce684992b28562a01665855f2aabcedd405901b89b47873f76ca8d1.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-app/app.self-0a182011b8009709264b927ecab128a29a66f541ca9a71f7218637f20cb56bb2.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-app/controllers/AboutController.self-47a796fa4b718540acb573e4c9066103f0a80bab0f98df56d4a46e14fda47063.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-app/controllers/HomeController.self-d63839b687f6d5107624924c1e2db8ca064ef246631dcf53ee87c8dfae51c942.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-app/controllers/ItemController.self-c5f8b1ce0c55bcd1709836abe0895053076e84027444ae3afc6ceefc12719868.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-app/controllers/InventoryController.self-0af03289f742b9b8d6a5aafd2123ff7b6a2a876e6836fb1acf73ab16ec714abb.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-app/controllers/StoryController.self-4ad68956292cec7dde3aa7d56f7e630e14e62d1ac38f82296f2850b7ea5e39b1.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-app/directives/itemDetail.self-97c4d0d721cf767690109eb1d522fea057fb4f4fe690ca59a07f693a35766c64.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-app/directives/itemSummary.self-dbf509dd068c100cd1c0a9d571fe8a6c06bc50c86bb26f8c80eb4ba9b25c4190.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-app/directives/storycardCard.self-3554aaa194b5d5b4b0b40ddb0cd44a15d334cdf810390a1d4b7b984347f3c3a3.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-app/models/Game.self-a5533a814e971b141e10dae488bcebba9d9d3364909ecc8112310b7a4c329b2c.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-app/models/Item.self-09c73f48a108f43390557c5cb05b3f9d32c94825845dc232f0be9f8994b215a3.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-app/models/Storycard.self-67a18db137ffa354d9c5ace24b7264fe548c5314f779224918d2373e501694a1.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/angular-app/services/InventoryService.self-8a405a08f473dd29d6dd4f58916a086abd730ee84d109ac77de6fa53a69a4b2b.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/templates/home.self-79f0230a1b3e892fe70c64a5cc8348f3a9632bd62861ebded0df9db74ed207ba.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/templates/home/about.self-deac94d664b76163051e7725f96076ae99dbd6896f5f45a6a154aa8249868ad8.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/templates/home/story.self-7599ba6c2f4ef9636adcf4e854e6a4fc6e0e4059042bd1f40c6ba45b7e854184.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/templates/home/story/inventory.self-4e23f39f544f00187d3ecc156a4bb6985743b8cb5cda05518c7a603d61c6b064.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/templates/home/story/item.self-bfcb0564dd7ca339fd5d52af49e78096f12c0ce973e94d730b906425e4f98ea2.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/assets/application.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1" for ::1 at 2016-06-11 11:23:59 -0400
+
+
+Started GET "/api/storycards/1.json" for ::1 at 2016-06-11 11:24:00 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mStorycard Load (0.9ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?  [["storycard_id", 1]]
+  [1m[36mStorycard Load (0.2ms)[0m  [1mSELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?[0m  [["parent_id", 1]]
+Completed 200 OK in 34ms (Views: 13.7ms | ActiveRecord: 1.2ms)
+  [1m[36mStorycard Load (0.2ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "storycards" SET "content" = ?, "updated_at" = ? WHERE "storycards"."id" = ?[0m  [["content", "You tally up the resources at your disposable:\n<br><br>\nYou share a cell with a talkative, cheerful Xhiff terrorist who hates your guts. (Underneath their bright feathery plumage and their outgoing natures, many Xhiff are quite xenophobic.)\n<br><br>\nYou have a stolen keychip concealed in your shoes, although you don't know exactly what it does or which of Ghlagor's security systems it's designed for.\n<br><br>\nYou've finished carving a shiv out of fingerbones from a native Ghlagorian dust-worm.\n<br><br>\nInside your mattress, you've hoarded a pile of rare silver sparking star-rocks.\n<br><br>\nAnd finally, you’ve freshened up the best you can and put on your cleanest prison jumpsuit.\n<br><br>\nA Volarian guard in dull shiklar armor, his bone crest lowered in clear boredom, approaches on his appointed rounds. His scaly skin is currently a deep calm shade of blue. Like the night sky on your homeworld. You haven't seen the sky in a long time..."], ["updated_at", "2016-06-11 15:24:45.361554"], ["id", 2]]
+  [1m[35m (2.0ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2016-06-11 11:24:47 -0400
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 96ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-75b555bd54e64f7d2b5892cbb6def68576df012a8139b5917c51407de696d0de.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.self-c1f038d63d4a7f5c3f49e218cc670132decbbb4049cc722ac83c4d0b2786cad4.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular-rails-templates.self-f73a25f00ce684992b28562a01665855f2aabcedd405901b89b47873f76ca8d1.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular/angular.self-a3680fff57179d0080f9d5748ca2a23e287fbbf4425e8199ec882f4c37ff01f7.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular-sanitize/angular-sanitize.self-e1040ae16741ecd24a18763044d880d8f05a8128fb988b4c50988631c7f6eee5.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular-app/controllers/AboutController.self-47a796fa4b718540acb573e4c9066103f0a80bab0f98df56d4a46e14fda47063.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular-app/controllers/HomeController.self-d63839b687f6d5107624924c1e2db8ca064ef246631dcf53ee87c8dfae51c942.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular-app/app.self-0a182011b8009709264b927ecab128a29a66f541ca9a71f7218637f20cb56bb2.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular-app/controllers/InventoryController.self-0af03289f742b9b8d6a5aafd2123ff7b6a2a876e6836fb1acf73ab16ec714abb.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular-app/directives/storycardCard.self-3554aaa194b5d5b4b0b40ddb0cd44a15d334cdf810390a1d4b7b984347f3c3a3.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular-app/directives/itemDetail.self-97c4d0d721cf767690109eb1d522fea057fb4f4fe690ca59a07f693a35766c64.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular-app/models/Game.self-a5533a814e971b141e10dae488bcebba9d9d3364909ecc8112310b7a4c329b2c.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular-app/models/Storycard.self-67a18db137ffa354d9c5ace24b7264fe548c5314f779224918d2373e501694a1.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular-app/controllers/StoryController.self-4ad68956292cec7dde3aa7d56f7e630e14e62d1ac38f82296f2850b7ea5e39b1.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular-app/services/InventoryService.self-8a405a08f473dd29d6dd4f58916a086abd730ee84d109ac77de6fa53a69a4b2b.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular-app/directives/itemSummary.self-dbf509dd068c100cd1c0a9d571fe8a6c06bc50c86bb26f8c80eb4ba9b25c4190.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular-app/models/Item.self-09c73f48a108f43390557c5cb05b3f9d32c94825845dc232f0be9f8994b215a3.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/templates/home/about.self-deac94d664b76163051e7725f96076ae99dbd6896f5f45a6a154aa8249868ad8.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/templates/home/story.self-7599ba6c2f4ef9636adcf4e854e6a4fc6e0e4059042bd1f40c6ba45b7e854184.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/angular-app/controllers/ItemController.self-c5f8b1ce0c55bcd1709836abe0895053076e84027444ae3afc6ceefc12719868.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/templates/home/story/item.self-bfcb0564dd7ca339fd5d52af49e78096f12c0ce973e94d730b906425e4f98ea2.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/templates/home/story/inventory.self-4e23f39f544f00187d3ecc156a4bb6985743b8cb5cda05518c7a603d61c6b064.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/application.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/assets/templates/home.self-79f0230a1b3e892fe70c64a5cc8348f3a9632bd62861ebded0df9db74ed207ba.js?body=1" for ::1 at 2016-06-11 11:24:47 -0400
+
+
+Started GET "/api/storycards/1.json" for ::1 at 2016-06-11 11:24:47 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mStorycard Load (0.2ms)[0m  SELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?[0m  [["storycard_id", 1]]
+  [1m[35mStorycard Load (0.2ms)[0m  SELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?  [["parent_id", 1]]
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/storycards/2.json" for ::1 at 2016-06-11 11:24:49 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mStorycard Load (0.3ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?  [["storycard_id", 2]]
+  [1m[36mStorycard Load (0.1ms)[0m  [1mSELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?[0m  [["parent_id", 2]]
+Completed 200 OK in 9ms (Views: 4.7ms | ActiveRecord: 0.5ms)
+  [1m[36mStorycard Load (0.1ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mUPDATE "storycards" SET "content" = ?, "updated_at" = ? WHERE "storycards"."id" = ?[0m  [["content", "Your Xhiff cellmate is earnestly explaining how to build cryoproton bombs with common household materials. &quot;Of course, when they go off, the gas is only toxic to Humans! That's why they are so brilliant.&quot; His feathers ruffle with excitement. Is he trying to goad you?"], ["updated_at", "2016-06-11 15:28:33.843535"], ["id", 3]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36mStorycard Load (0.1ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "storycards" SET "content" = ?, "updated_at" = ? WHERE "storycards"."id" = ?[0m  [["content", "Volarians are quite an attractive race. Tall, proud, with captivating chameleon skin and excellent bone structure."], ["updated_at", "2016-06-11 15:29:13.753042"], ["id", 4]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36mStorycard Load (0.1ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "storycards" SET "content" = ?, "updated_at" = ? WHERE "storycards"."id" = ?[0m  [["content", "Volarians aren't known for being a greedy race, but keeping an eye on criminals can't pay well. Maybe this guard will appreciate some extra income, in return for a favor."], ["updated_at", "2016-06-11 15:29:39.782495"], ["id", 5]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mStorycard Load (0.1ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "storycards" SET "content" = ?, "updated_at" = ? WHERE "storycards"."id" = ?[0m  [["content", "Enough waiting. You've been in this prison long enough. If you stab your cellmate, the guard will surely have to investigate, and surely won't keep you two locked up together.\n<br><br>\nYour Xhiff cellmate is earnestly explaining how to build cryoproton bombs with common household materials. &quot;Of course, when they go off, the gas is only toxic to Humans! That's why they are so brilliant.&quot; His feathers ruffle excitedly, and there's a strange gleam in his beady eyes.\n<br><br>\nHe never sees your shiv coming.\n<br><br>\nThe Volarian guard sprints to your cell, sees the mess, and immediately unlocks the door. &quot;You're coming with me, troublemaker,&quot; he growls."], ["updated_at", "2016-06-11 15:31:34.527158"], ["id", 7]]
+  [1m[35m (1.5ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2016-06-11 11:31:38 -0400
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 550ms (Views: 548.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-11 11:31:38 -0400
+
+
+Started GET "/assets/angular-rails-templates.self-f73a25f00ce684992b28562a01665855f2aabcedd405901b89b47873f76ca8d1.js?body=1" for ::1 at 2016-06-11 11:31:38 -0400
+
+
+Started GET "/assets/angular-app/app.self-0a182011b8009709264b927ecab128a29a66f541ca9a71f7218637f20cb56bb2.js?body=1" for ::1 at 2016-06-11 11:31:38 -0400
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-75b555bd54e64f7d2b5892cbb6def68576df012a8139b5917c51407de696d0de.js?body=1" for ::1 at 2016-06-11 11:31:38 -0400
+
+
+Started GET "/assets/angular-app/controllers/HomeController.self-d63839b687f6d5107624924c1e2db8ca064ef246631dcf53ee87c8dfae51c942.js?body=1" for ::1 at 2016-06-11 11:31:38 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.self-c1f038d63d4a7f5c3f49e218cc670132decbbb4049cc722ac83c4d0b2786cad4.js?body=1" for ::1 at 2016-06-11 11:31:38 -0400
+
+
+Started GET "/assets/angular/angular.self-a3680fff57179d0080f9d5748ca2a23e287fbbf4425e8199ec882f4c37ff01f7.js?body=1" for ::1 at 2016-06-11 11:31:38 -0400
+
+
+Started GET "/assets/angular-sanitize/angular-sanitize.self-e1040ae16741ecd24a18763044d880d8f05a8128fb988b4c50988631c7f6eee5.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/angular-app/controllers/AboutController.self-47a796fa4b718540acb573e4c9066103f0a80bab0f98df56d4a46e14fda47063.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/angular-app/controllers/InventoryController.self-0af03289f742b9b8d6a5aafd2123ff7b6a2a876e6836fb1acf73ab16ec714abb.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/angular-app/controllers/ItemController.self-c5f8b1ce0c55bcd1709836abe0895053076e84027444ae3afc6ceefc12719868.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/angular-app/controllers/StoryController.self-4ad68956292cec7dde3aa7d56f7e630e14e62d1ac38f82296f2850b7ea5e39b1.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/angular-app/directives/itemDetail.self-97c4d0d721cf767690109eb1d522fea057fb4f4fe690ca59a07f693a35766c64.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/angular-app/directives/storycardCard.self-3554aaa194b5d5b4b0b40ddb0cd44a15d334cdf810390a1d4b7b984347f3c3a3.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/angular-app/directives/itemSummary.self-dbf509dd068c100cd1c0a9d571fe8a6c06bc50c86bb26f8c80eb4ba9b25c4190.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/angular-app/models/Game.self-a5533a814e971b141e10dae488bcebba9d9d3364909ecc8112310b7a4c329b2c.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/angular-app/models/Item.self-09c73f48a108f43390557c5cb05b3f9d32c94825845dc232f0be9f8994b215a3.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/angular-app/models/Storycard.self-67a18db137ffa354d9c5ace24b7264fe548c5314f779224918d2373e501694a1.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/angular-app/services/InventoryService.self-8a405a08f473dd29d6dd4f58916a086abd730ee84d109ac77de6fa53a69a4b2b.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/templates/home.self-ed508982ecbbb8d29dcc1208d4d5d37ba5ee3f35c0558fa4624c000799a83de0.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/templates/home/about.self-deac94d664b76163051e7725f96076ae99dbd6896f5f45a6a154aa8249868ad8.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/templates/home/story.self-7599ba6c2f4ef9636adcf4e854e6a4fc6e0e4059042bd1f40c6ba45b7e854184.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/templates/home/story/inventory.self-4e23f39f544f00187d3ecc156a4bb6985743b8cb5cda05518c7a603d61c6b064.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/templates/home/story/item.self-bfcb0564dd7ca339fd5d52af49e78096f12c0ce973e94d730b906425e4f98ea2.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/assets/application.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1" for ::1 at 2016-06-11 11:31:39 -0400
+
+
+Started GET "/api/storycards/1.json" for ::1 at 2016-06-11 11:31:39 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mStorycard Load (0.3ms)[0m  SELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?[0m  [["storycard_id", 1]]
+  [1m[35mStorycard Load (0.2ms)[0m  SELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?  [["parent_id", 1]]
+Completed 200 OK in 13ms (Views: 7.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/storycards/2.json" for ::1 at 2016-06-11 11:31:40 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mStorycard Load (0.1ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?  [["storycard_id", 2]]
+  [1m[36mStorycard Load (0.8ms)[0m  [1mSELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?[0m  [["parent_id", 2]]
+Completed 200 OK in 16ms (Views: 9.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/storycards/7.json" for ::1 at 2016-06-11 11:31:43 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"7"}
+  [1m[35mStorycard Load (0.1ms)[0m  SELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?[0m  [["storycard_id", 7]]
+  [1m[35mStorycard Load (0.2ms)[0m  SELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?  [["parent_id", 7]]
+Completed 200 OK in 10ms (Views: 5.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/storycards/1.json" for ::1 at 2016-06-11 11:31:53 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mStorycard Load (0.3ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?  [["storycard_id", 1]]
+  [1m[36mStorycard Load (0.2ms)[0m  [1mSELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?[0m  [["parent_id", 1]]
+Completed 200 OK in 14ms (Views: 7.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/storycards/2.json" for ::1 at 2016-06-11 11:32:04 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mStorycard Load (0.1ms)[0m  SELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?[0m  [["storycard_id", 2]]
+  [1m[35mStorycard Load (0.1ms)[0m  SELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?  [["parent_id", 2]]
+Completed 200 OK in 10ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/storycards/1.json" for ::1 at 2016-06-11 11:32:06 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mStorycard Load (0.2ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?  [["storycard_id", 1]]
+  [1m[36mStorycard Load (0.7ms)[0m  [1mSELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?[0m  [["parent_id", 1]]
+Completed 200 OK in 15ms (Views: 7.3ms | ActiveRecord: 1.1ms)

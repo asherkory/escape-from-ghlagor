@@ -10,7 +10,7 @@ function StorycardCard () {
       story: '='
     },
     controllerAs: 'ctrl',
-    controller: function ($rootScope, Storycard, Item, InventoryService) {
+    controller: function ($rootScope, InventoryService) {
       var ctrl = this;
 
       ctrl.addToInventory = function (itemId) { 
@@ -24,7 +24,7 @@ function StorycardCard () {
     template: [
       '<div class="storycard-card">',
         '<h3>{{ ctrl.title }}</h3>',
-        '<p>{{ ctrl.content }}</p>',
+        '<p ng-bind-html="ctrl.content"></p>',
         '<ul>',
           '<li ng-repeat="choice in ctrl.children">',
             '<h4 ng-click="ctrl.changeStory(choice.id)">{{ choice.title }}</h4>', 
@@ -34,7 +34,7 @@ function StorycardCard () {
         '<ul>',
           '<li ng-repeat="item in ctrl.items">',
             '<h4>{{ item.name }}</h4>',
-            '<button ng-click="ctrl.addToInventory(item.id)">Add to Inventory - {{ item.id }}</button>',
+            '<button ng-click="ctrl.addToInventory(item.id)">Add to Inventory</button>',
           '</li>',
         '</ul>',
       '</div>'

@@ -1,5 +1,5 @@
 angular
-  .module('app', ['ui.router', 'ngResource', 'templates'])
+  .module('app', ['ui.router', 'ngResource', 'templates', 'ngSanitize'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
@@ -11,6 +11,11 @@ angular
         url: 'about',
         templateUrl: 'home/about.html',
         controller: 'AboutController as ctrl'
+      })
+      .state('home.character', {
+        url: 'character',
+        templateUrl: 'home/character.html',
+        controller: 'CharacterController as ctrl'
       })
       .state('home.story', {
         url: 'story',
