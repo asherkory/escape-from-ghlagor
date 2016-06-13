@@ -7,7 +7,7 @@ function StorycardCard () {
       children: '=',
       items: '=',
       id: '=',
-      story: '='
+      removableItems: '='
     },
     controllerAs: 'ctrl',
     controller: function ($rootScope, InventoryService) {
@@ -24,10 +24,11 @@ function StorycardCard () {
     template: [
       '<div class="storycard-card">',
         '<h3>{{ ctrl.title }}</h3>',
+        '<h4>{{ ctrl.removableItems }}</h4>', // why isn't this showing up?
         '<p ng-bind-html="ctrl.content"></p>',
         '<ul>',
           '<li ng-repeat="choice in ctrl.children">',
-            '<h4 ng-click="ctrl.changeStory(choice.id)">{{ choice.title }}</h4>', 
+            '<h4 ng-click="ctrl.changeStory(choice.id)">{{ choice.title }} {{ choice.id }}</h4>', 
           '</li>',
         '</ul>',
         '<h3 ng-if="ctrl.items.length > 0">Items:</h3>',
@@ -39,7 +40,12 @@ function StorycardCard () {
         '</ul>',
       '</div>'
     ].join(''),
-    restrict: 'E'
+    restrict: 'E',
+    // link: function (scope, element, attrs, ctrl, InventoryService) { // this probably isn't working; put in controller?
+    //   angular.forEach(ctrl.removableItems, function (item) {
+    //     InventoryService.removeFromInventory(item.id);
+    //   });
+    // }
   };
 }
 

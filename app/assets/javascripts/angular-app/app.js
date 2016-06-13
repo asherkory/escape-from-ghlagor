@@ -17,6 +17,21 @@ angular
         templateUrl: 'home/character.html',
         controller: 'CharacterController as ctrl'
       })
+      .state('home.character.new', {
+        url: '/new',
+        templateUrl: 'home/character/new.html',
+        controller: 'CharacterNewController as ctrl'
+      })
+      .state('home.character.index', {
+        url: '/index',
+        templateUrl: 'home/character/index.html',
+        controller: 'CharacterIndexController as ctrl'
+      })
+      .state('home.character.show', {
+        url: '/:id',
+        templateUrl: 'home/character/show.html',
+        controller: 'CharacterShowController as ctrl'
+      })
       .state('home.story', {
         url: 'story',
         templateUrl: 'home/story.html',
@@ -25,7 +40,7 @@ angular
       .state('home.story.inventory', {
         url: '/inventory',
         templateUrl: 'home/story/inventory.html',
-        controller: 'InventoryController as ctrl' // should I be using resolves?
+        controller: 'InventoryController as ctrl'
       })
       .state('home.story.item', {
         url: '/item/:id',

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   namespace :api, defaults:{format: :json} do 
     resources :storycards, only: [:show]
     resources :items, except: [:edit, :new]
+    resources :characters, except: [:edit, :new]
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

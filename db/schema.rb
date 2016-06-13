@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160610210911) do
+ActiveRecord::Schema.define(version: 20160612180603) do
+
+  create_table "characters", force: :cascade do |t|
+    t.string "name"
+    t.string "gender"
+    t.text   "homeworld"
+    t.string "skin"
+    t.string "hair"
+    t.string "style"
+    t.string "personality"
+  end
 
   create_table "choices", force: :cascade do |t|
     t.integer "parent_id"
@@ -29,6 +39,11 @@ ActiveRecord::Schema.define(version: 20160610210911) do
   create_table "storycard_items", force: :cascade do |t|
     t.integer "storycard_id"
     t.integer "item_id"
+  end
+
+  create_table "storycard_removable_items", force: :cascade do |t|
+    t.integer "removable_storycard_id"
+    t.integer "removable_item_id"
   end
 
   create_table "storycards", force: :cascade do |t|
