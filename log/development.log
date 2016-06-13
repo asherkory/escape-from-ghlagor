@@ -11809,3 +11809,521 @@ Started GET "/api/characters.json" for ::1 at 2016-06-13 12:16:30 -0400
 Processing by Api::CharactersController#index as JSON
   [1m[35mCharacter Load (0.4ms)[0m  SELECT "characters".* FROM "characters"
 Completed 200 OK in 22ms (Views: 15.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/storycards/1.json" for ::1 at 2016-06-13 12:24:46 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mStorycard Load (1.2ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?  [["storycard_id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_removable_items" ON "items"."id" = "storycard_removable_items"."removable_item_id" WHERE "storycard_removable_items"."removable_storycard_id" = ?[0m  [["removable_storycard_id", 1]]
+  [1m[35mStorycard Load (0.2ms)[0m  SELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?  [["parent_id", 1]]
+Completed 200 OK in 75ms (Views: 46.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2016-06-13 12:24:53 -0400
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 560ms (Views: 559.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular/angular.self-a3680fff57179d0080f9d5748ca2a23e287fbbf4425e8199ec882f4c37ff01f7.js?body=1" for ::1 at 2016-06-13 12:24:53 -0400
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-75b555bd54e64f7d2b5892cbb6def68576df012a8139b5917c51407de696d0de.js?body=1" for ::1 at 2016-06-13 12:24:53 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-13 12:24:53 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.self-c1f038d63d4a7f5c3f49e218cc670132decbbb4049cc722ac83c4d0b2786cad4.js?body=1" for ::1 at 2016-06-13 12:24:53 -0400
+
+
+Started GET "/assets/angular-sanitize/angular-sanitize.self-e1040ae16741ecd24a18763044d880d8f05a8128fb988b4c50988631c7f6eee5.js?body=1" for ::1 at 2016-06-13 12:24:53 -0400
+
+
+Started GET "/assets/angular-rails-templates.self-f73a25f00ce684992b28562a01665855f2aabcedd405901b89b47873f76ca8d1.js?body=1" for ::1 at 2016-06-13 12:24:53 -0400
+
+
+Started GET "/assets/angular-app/directives/storycardCard.self-e1c9f23068cf19adb06cb713ad3e7af1f27a12d319144d179c1e9297c4fc3e29.js?body=1" for ::1 at 2016-06-13 12:24:53 -0400
+
+
+Started GET "/assets/angular-app/models/Character.self-839bc942d1d0929068ae77a5bf9aa7dd4aeb9e93889809cbf921d753fad6484e.js?body=1" for ::1 at 2016-06-13 12:24:53 -0400
+
+
+Started GET "/assets/angular-app/models/Storycard.self-67a18db137ffa354d9c5ace24b7264fe548c5314f779224918d2373e501694a1.js?body=1" for ::1 at 2016-06-13 12:24:53 -0400
+
+
+Started GET "/assets/angular-app/models/Item.self-09c73f48a108f43390557c5cb05b3f9d32c94825845dc232f0be9f8994b215a3.js?body=1" for ::1 at 2016-06-13 12:24:53 -0400
+
+
+Started GET "/assets/angular-app/services/InventoryService.self-8a405a08f473dd29d6dd4f58916a086abd730ee84d109ac77de6fa53a69a4b2b.js?body=1" for ::1 at 2016-06-13 12:24:53 -0400
+
+
+Started GET "/assets/templates/home.self-4e32fab0d12dd432787f0b231441eb7631823c129b0cc4801490544f0bdacde2.js?body=1" for ::1 at 2016-06-13 12:24:53 -0400
+
+
+Started GET "/assets/templates/home/about.self-ec09277d9b43581fe343e61560b3673d6aa04b73657a09765cb9846675f04d83.js?body=1" for ::1 at 2016-06-13 12:24:53 -0400
+
+
+Started GET "/assets/templates/home/story/item.self-bfcb0564dd7ca339fd5d52af49e78096f12c0ce973e94d730b906425e4f98ea2.js?body=1" for ::1 at 2016-06-13 12:24:53 -0400
+
+
+Started GET "/assets/templates/home/character/index.self-cf56b925142bcf66bdbdc965f1774e23e24e2a584c152d51793fccb05f0b3236.js?body=1" for ::1 at 2016-06-13 12:24:53 -0400
+
+
+Started GET "/assets/templates/home/character.self-c10ea793e5fcbe8bb40f17cefdf91a5c7ae3639076e312adb01caa46a5bf7f5e.js?body=1" for ::1 at 2016-06-13 12:24:53 -0400
+
+
+Started GET "/assets/templates/home/story.self-8cbc79ef17dc4d43318ba4e6bdc30f9c0569abc4395c5c976668c3335fcac245.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/assets/application.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/assets/angular-app/controllers/AboutController.self-47a796fa4b718540acb573e4c9066103f0a80bab0f98df56d4a46e14fda47063.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/assets/angular-app/app.self-c314ff8463770eb2c1c8efc3acd44dca13813032e8af3659f58e24bb754b615a.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterController.self-7b8e47f36c05bb2256ebf1e89ac3172d20e59e3b8d75d8c7b35ee2a4d8931ad5.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterIndexController.self-d66021af32abbbfe197c836e3dc722758d14627d547eda0f43ebbd6f7cfe7ad7.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterShowController.self-ff57940755d4cc2638d7ade646dd181becccce809ea1437c2c0ec82738bdb7f9.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterNewController.self-c63aa15c8909d4526e5b6558df0ac5ee0311b549200fd0fc241e6ebf3278f088.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/assets/angular-app/controllers/InventoryController.self-0af03289f742b9b8d6a5aafd2123ff7b6a2a876e6836fb1acf73ab16ec714abb.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/assets/angular-app/controllers/ItemController.self-c5f8b1ce0c55bcd1709836abe0895053076e84027444ae3afc6ceefc12719868.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/assets/angular-app/controllers/StoryController.self-4ad68956292cec7dde3aa7d56f7e630e14e62d1ac38f82296f2850b7ea5e39b1.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/assets/angular-app/controllers/HomeController.self-d63839b687f6d5107624924c1e2db8ca064ef246631dcf53ee87c8dfae51c942.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/assets/angular-app/directives/itemDetail.self-97c4d0d721cf767690109eb1d522fea057fb4f4fe690ca59a07f693a35766c64.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/assets/angular-app/directives/itemSummary.self-dbf509dd068c100cd1c0a9d571fe8a6c06bc50c86bb26f8c80eb4ba9b25c4190.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/assets/templates/home/character/new.self-789426d5a4773481212f87807ce4f9aed67e0fcb7b8f89f0e1fa1924d505fa94.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/assets/templates/home/character/show.self-7674e04914f0d9baec227ea8d0bf8b3f81309aa29a4eb6a660502ef7374b4d46.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/assets/templates/home/story/inventory.self-1fd341e18b9acb1764b10148cdaf87c6c5777c649bb80f0280542f8ea838781d.js?body=1" for ::1 at 2016-06-13 12:24:54 -0400
+
+
+Started GET "/api/storycards/1.json" for ::1 at 2016-06-13 12:24:54 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mStorycard Load (0.6ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?  [["storycard_id", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_removable_items" ON "items"."id" = "storycard_removable_items"."removable_item_id" WHERE "storycard_removable_items"."removable_storycard_id" = ?[0m  [["removable_storycard_id", 1]]
+  [1m[35mStorycard Load (0.3ms)[0m  SELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?  [["parent_id", 1]]
+Completed 200 OK in 15ms (Views: 7.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/storycards/2.json" for ::1 at 2016-06-13 12:24:56 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mStorycard Load (0.3ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mItem Load (1.3ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?  [["storycard_id", 2]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_removable_items" ON "items"."id" = "storycard_removable_items"."removable_item_id" WHERE "storycard_removable_items"."removable_storycard_id" = ?[0m  [["removable_storycard_id", 2]]
+  [1m[35mStorycard Load (0.1ms)[0m  SELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?  [["parent_id", 2]]
+Completed 200 OK in 17ms (Views: 10.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/items/2.json" for ::1 at 2016-06-13 12:25:02 -0400
+Processing by Api::ItemsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 16ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/items/3.json" for ::1 at 2016-06-13 12:25:04 -0400
+Processing by Api::ItemsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+Completed 200 OK in 9ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/items/4.json" for ::1 at 2016-06-13 12:25:06 -0400
+Processing by Api::ItemsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/items/5.json" for ::1 at 2016-06-13 12:25:08 -0400
+Processing by Api::ItemsController#show as JSON
+  Parameters: {"id"=>"5"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 5]]
+Completed 200 OK in 9ms (Views: 4.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-06-13 12:25:39 -0400
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 445ms (Views: 444.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular/angular.self-a3680fff57179d0080f9d5748ca2a23e287fbbf4425e8199ec882f4c37ff01f7.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-75b555bd54e64f7d2b5892cbb6def68576df012a8139b5917c51407de696d0de.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-rails-templates.self-f73a25f00ce684992b28562a01665855f2aabcedd405901b89b47873f76ca8d1.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.self-c1f038d63d4a7f5c3f49e218cc670132decbbb4049cc722ac83c4d0b2786cad4.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/controllers/AboutController.self-47a796fa4b718540acb573e4c9066103f0a80bab0f98df56d4a46e14fda47063.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-sanitize/angular-sanitize.self-e1040ae16741ecd24a18763044d880d8f05a8128fb988b4c50988631c7f6eee5.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterController.self-7b8e47f36c05bb2256ebf1e89ac3172d20e59e3b8d75d8c7b35ee2a4d8931ad5.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterIndexController.self-d66021af32abbbfe197c836e3dc722758d14627d547eda0f43ebbd6f7cfe7ad7.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/app.self-c314ff8463770eb2c1c8efc3acd44dca13813032e8af3659f58e24bb754b615a.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterNewController.self-c63aa15c8909d4526e5b6558df0ac5ee0311b549200fd0fc241e6ebf3278f088.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterShowController.self-ff57940755d4cc2638d7ade646dd181becccce809ea1437c2c0ec82738bdb7f9.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/controllers/InventoryController.self-0af03289f742b9b8d6a5aafd2123ff7b6a2a876e6836fb1acf73ab16ec714abb.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/controllers/StoryController.self-4ad68956292cec7dde3aa7d56f7e630e14e62d1ac38f82296f2850b7ea5e39b1.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/directives/itemDetail.self-97c4d0d721cf767690109eb1d522fea057fb4f4fe690ca59a07f693a35766c64.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/controllers/ItemController.self-c5f8b1ce0c55bcd1709836abe0895053076e84027444ae3afc6ceefc12719868.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/directives/itemSummary.self-dbf509dd068c100cd1c0a9d571fe8a6c06bc50c86bb26f8c80eb4ba9b25c4190.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/models/Character.self-839bc942d1d0929068ae77a5bf9aa7dd4aeb9e93889809cbf921d753fad6484e.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/controllers/HomeController.self-d63839b687f6d5107624924c1e2db8ca064ef246631dcf53ee87c8dfae51c942.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/models/Item.self-09c73f48a108f43390557c5cb05b3f9d32c94825845dc232f0be9f8994b215a3.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/directives/storycardCard.self-e1c9f23068cf19adb06cb713ad3e7af1f27a12d319144d179c1e9297c4fc3e29.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/services/InventoryService.self-8a405a08f473dd29d6dd4f58916a086abd730ee84d109ac77de6fa53a69a4b2b.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/templates/home.self-4e32fab0d12dd432787f0b231441eb7631823c129b0cc4801490544f0bdacde2.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/templates/home/about.self-ec09277d9b43581fe343e61560b3673d6aa04b73657a09765cb9846675f04d83.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/templates/home/character.self-c10ea793e5fcbe8bb40f17cefdf91a5c7ae3639076e312adb01caa46a5bf7f5e.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/angular-app/models/Storycard.self-67a18db137ffa354d9c5ace24b7264fe548c5314f779224918d2373e501694a1.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/templates/home/character/index.self-cf56b925142bcf66bdbdc965f1774e23e24e2a584c152d51793fccb05f0b3236.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/templates/home/character/new.self-789426d5a4773481212f87807ce4f9aed67e0fcb7b8f89f0e1fa1924d505fa94.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/templates/home/character/show.self-7674e04914f0d9baec227ea8d0bf8b3f81309aa29a4eb6a660502ef7374b4d46.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/templates/home/story.self-8cbc79ef17dc4d43318ba4e6bdc30f9c0569abc4395c5c976668c3335fcac245.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/templates/home/story/item.self-bfcb0564dd7ca339fd5d52af49e78096f12c0ce973e94d730b906425e4f98ea2.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/application.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/assets/templates/home/story/inventory.self-4463ce549655809f8558b2e03ec758d25a1bf28ff8b73a0ab7978c361116eea2.js?body=1" for ::1 at 2016-06-13 12:25:40 -0400
+
+
+Started GET "/api/storycards/1.json" for ::1 at 2016-06-13 12:25:40 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mStorycard Load (0.2ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?  [["storycard_id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_removable_items" ON "items"."id" = "storycard_removable_items"."removable_item_id" WHERE "storycard_removable_items"."removable_storycard_id" = ?[0m  [["removable_storycard_id", 1]]
+  [1m[35mStorycard Load (0.2ms)[0m  SELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?  [["parent_id", 1]]
+Completed 200 OK in 13ms (Views: 6.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-06-13 12:25:45 -0400
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 454ms (Views: 453.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular/angular.self-a3680fff57179d0080f9d5748ca2a23e287fbbf4425e8199ec882f4c37ff01f7.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-rails-templates.self-f73a25f00ce684992b28562a01665855f2aabcedd405901b89b47873f76ca8d1.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.self-c1f038d63d4a7f5c3f49e218cc670132decbbb4049cc722ac83c4d0b2786cad4.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-75b555bd54e64f7d2b5892cbb6def68576df012a8139b5917c51407de696d0de.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-sanitize/angular-sanitize.self-e1040ae16741ecd24a18763044d880d8f05a8128fb988b4c50988631c7f6eee5.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-app/app.self-c314ff8463770eb2c1c8efc3acd44dca13813032e8af3659f58e24bb754b615a.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-app/controllers/AboutController.self-47a796fa4b718540acb573e4c9066103f0a80bab0f98df56d4a46e14fda47063.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterIndexController.self-d66021af32abbbfe197c836e3dc722758d14627d547eda0f43ebbd6f7cfe7ad7.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterNewController.self-c63aa15c8909d4526e5b6558df0ac5ee0311b549200fd0fc241e6ebf3278f088.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterController.self-7b8e47f36c05bb2256ebf1e89ac3172d20e59e3b8d75d8c7b35ee2a4d8931ad5.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterShowController.self-ff57940755d4cc2638d7ade646dd181becccce809ea1437c2c0ec82738bdb7f9.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-app/controllers/HomeController.self-d63839b687f6d5107624924c1e2db8ca064ef246631dcf53ee87c8dfae51c942.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-app/controllers/InventoryController.self-0af03289f742b9b8d6a5aafd2123ff7b6a2a876e6836fb1acf73ab16ec714abb.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-app/controllers/ItemController.self-c5f8b1ce0c55bcd1709836abe0895053076e84027444ae3afc6ceefc12719868.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-app/controllers/StoryController.self-4ad68956292cec7dde3aa7d56f7e630e14e62d1ac38f82296f2850b7ea5e39b1.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-app/directives/itemDetail.self-97c4d0d721cf767690109eb1d522fea057fb4f4fe690ca59a07f693a35766c64.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-app/directives/itemSummary.self-dbf509dd068c100cd1c0a9d571fe8a6c06bc50c86bb26f8c80eb4ba9b25c4190.js?body=1" for ::1 at 2016-06-13 12:25:45 -0400
+
+
+Started GET "/assets/angular-app/directives/storycardCard.self-e1c9f23068cf19adb06cb713ad3e7af1f27a12d319144d179c1e9297c4fc3e29.js?body=1" for ::1 at 2016-06-13 12:25:46 -0400
+
+
+Started GET "/assets/angular-app/models/Character.self-839bc942d1d0929068ae77a5bf9aa7dd4aeb9e93889809cbf921d753fad6484e.js?body=1" for ::1 at 2016-06-13 12:25:46 -0400
+
+
+Started GET "/assets/angular-app/models/Item.self-09c73f48a108f43390557c5cb05b3f9d32c94825845dc232f0be9f8994b215a3.js?body=1" for ::1 at 2016-06-13 12:25:46 -0400
+
+
+Started GET "/assets/angular-app/models/Storycard.self-67a18db137ffa354d9c5ace24b7264fe548c5314f779224918d2373e501694a1.js?body=1" for ::1 at 2016-06-13 12:25:46 -0400
+
+
+Started GET "/assets/angular-app/services/InventoryService.self-8a405a08f473dd29d6dd4f58916a086abd730ee84d109ac77de6fa53a69a4b2b.js?body=1" for ::1 at 2016-06-13 12:25:46 -0400
+
+
+Started GET "/assets/templates/home.self-4e32fab0d12dd432787f0b231441eb7631823c129b0cc4801490544f0bdacde2.js?body=1" for ::1 at 2016-06-13 12:25:46 -0400
+
+
+Started GET "/assets/templates/home/about.self-ec09277d9b43581fe343e61560b3673d6aa04b73657a09765cb9846675f04d83.js?body=1" for ::1 at 2016-06-13 12:25:46 -0400
+
+
+Started GET "/assets/templates/home/character/index.self-cf56b925142bcf66bdbdc965f1774e23e24e2a584c152d51793fccb05f0b3236.js?body=1" for ::1 at 2016-06-13 12:25:46 -0400
+
+
+Started GET "/assets/templates/home/character.self-c10ea793e5fcbe8bb40f17cefdf91a5c7ae3639076e312adb01caa46a5bf7f5e.js?body=1" for ::1 at 2016-06-13 12:25:46 -0400
+
+
+Started GET "/assets/templates/home/character/new.self-789426d5a4773481212f87807ce4f9aed67e0fcb7b8f89f0e1fa1924d505fa94.js?body=1" for ::1 at 2016-06-13 12:25:46 -0400
+
+
+Started GET "/assets/templates/home/character/show.self-7674e04914f0d9baec227ea8d0bf8b3f81309aa29a4eb6a660502ef7374b4d46.js?body=1" for ::1 at 2016-06-13 12:25:46 -0400
+
+
+Started GET "/assets/templates/home/story/item.self-bfcb0564dd7ca339fd5d52af49e78096f12c0ce973e94d730b906425e4f98ea2.js?body=1" for ::1 at 2016-06-13 12:25:46 -0400
+
+
+Started GET "/assets/templates/home/story.self-8cbc79ef17dc4d43318ba4e6bdc30f9c0569abc4395c5c976668c3335fcac245.js?body=1" for ::1 at 2016-06-13 12:25:46 -0400
+
+
+Started GET "/assets/application.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1" for ::1 at 2016-06-13 12:25:46 -0400
+
+
+Started GET "/assets/templates/home/story/inventory.self-bfbf89e9d84da7afd9d6904f82917c81fdd02b7f211d7fea887fbaf500441ccc.js?body=1" for ::1 at 2016-06-13 12:25:46 -0400
+
+
+Started GET "/api/storycards/1.json" for ::1 at 2016-06-13 12:25:46 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mStorycard Load (0.1ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?  [["storycard_id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_removable_items" ON "items"."id" = "storycard_removable_items"."removable_item_id" WHERE "storycard_removable_items"."removable_storycard_id" = ?[0m  [["removable_storycard_id", 1]]
+  [1m[35mStorycard Load (0.1ms)[0m  SELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?  [["parent_id", 1]]
+Completed 200 OK in 10ms (Views: 5.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-06-13 12:26:02 -0400
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 451ms (Views: 450.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular/angular.self-a3680fff57179d0080f9d5748ca2a23e287fbbf4425e8199ec882f4c37ff01f7.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-75b555bd54e64f7d2b5892cbb6def68576df012a8139b5917c51407de696d0de.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.self-c1f038d63d4a7f5c3f49e218cc670132decbbb4049cc722ac83c4d0b2786cad4.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-sanitize/angular-sanitize.self-e1040ae16741ecd24a18763044d880d8f05a8128fb988b4c50988631c7f6eee5.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-rails-templates.self-f73a25f00ce684992b28562a01665855f2aabcedd405901b89b47873f76ca8d1.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/app.self-c314ff8463770eb2c1c8efc3acd44dca13813032e8af3659f58e24bb754b615a.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/controllers/AboutController.self-47a796fa4b718540acb573e4c9066103f0a80bab0f98df56d4a46e14fda47063.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterIndexController.self-d66021af32abbbfe197c836e3dc722758d14627d547eda0f43ebbd6f7cfe7ad7.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterNewController.self-c63aa15c8909d4526e5b6558df0ac5ee0311b549200fd0fc241e6ebf3278f088.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterShowController.self-ff57940755d4cc2638d7ade646dd181becccce809ea1437c2c0ec82738bdb7f9.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterController.self-7b8e47f36c05bb2256ebf1e89ac3172d20e59e3b8d75d8c7b35ee2a4d8931ad5.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/controllers/HomeController.self-d63839b687f6d5107624924c1e2db8ca064ef246631dcf53ee87c8dfae51c942.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/controllers/ItemController.self-c5f8b1ce0c55bcd1709836abe0895053076e84027444ae3afc6ceefc12719868.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/controllers/StoryController.self-4ad68956292cec7dde3aa7d56f7e630e14e62d1ac38f82296f2850b7ea5e39b1.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/directives/storycardCard.self-e1c9f23068cf19adb06cb713ad3e7af1f27a12d319144d179c1e9297c4fc3e29.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/controllers/InventoryController.self-0af03289f742b9b8d6a5aafd2123ff7b6a2a876e6836fb1acf73ab16ec714abb.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/directives/itemDetail.self-97c4d0d721cf767690109eb1d522fea057fb4f4fe690ca59a07f693a35766c64.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/models/Item.self-09c73f48a108f43390557c5cb05b3f9d32c94825845dc232f0be9f8994b215a3.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/models/Character.self-839bc942d1d0929068ae77a5bf9aa7dd4aeb9e93889809cbf921d753fad6484e.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/directives/itemSummary.self-dbf509dd068c100cd1c0a9d571fe8a6c06bc50c86bb26f8c80eb4ba9b25c4190.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/models/Storycard.self-67a18db137ffa354d9c5ace24b7264fe548c5314f779224918d2373e501694a1.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/angular-app/services/InventoryService.self-8a405a08f473dd29d6dd4f58916a086abd730ee84d109ac77de6fa53a69a4b2b.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/templates/home.self-4e32fab0d12dd432787f0b231441eb7631823c129b0cc4801490544f0bdacde2.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/templates/home/character.self-c10ea793e5fcbe8bb40f17cefdf91a5c7ae3639076e312adb01caa46a5bf7f5e.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/templates/home/about.self-ec09277d9b43581fe343e61560b3673d6aa04b73657a09765cb9846675f04d83.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/templates/home/character/index.self-cf56b925142bcf66bdbdc965f1774e23e24e2a584c152d51793fccb05f0b3236.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/templates/home/character/show.self-7674e04914f0d9baec227ea8d0bf8b3f81309aa29a4eb6a660502ef7374b4d46.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/templates/home/character/new.self-789426d5a4773481212f87807ce4f9aed67e0fcb7b8f89f0e1fa1924d505fa94.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/templates/home/story.self-8cbc79ef17dc4d43318ba4e6bdc30f9c0569abc4395c5c976668c3335fcac245.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/application.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/templates/home/story/item.self-bfcb0564dd7ca339fd5d52af49e78096f12c0ce973e94d730b906425e4f98ea2.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/assets/templates/home/story/inventory.self-4f56eb355404a8f8ba92e7ef84f2cc9dbf0d914b0b11f7b68f2b9f1b36c4a96a.js?body=1" for ::1 at 2016-06-13 12:26:03 -0400
+
+
+Started GET "/api/storycards/1.json" for ::1 at 2016-06-13 12:26:03 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mStorycard Load (0.2ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?  [["storycard_id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_removable_items" ON "items"."id" = "storycard_removable_items"."removable_item_id" WHERE "storycard_removable_items"."removable_storycard_id" = ?[0m  [["removable_storycard_id", 1]]
+  [1m[35mStorycard Load (0.1ms)[0m  SELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?  [["parent_id", 1]]
+Completed 200 OK in 10ms (Views: 5.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/storycards/1.json" for ::1 at 2016-06-13 12:26:14 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mStorycard Load (0.1ms)[0m  [1mSELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?  [["storycard_id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_removable_items" ON "items"."id" = "storycard_removable_items"."removable_item_id" WHERE "storycard_removable_items"."removable_storycard_id" = ?[0m  [["removable_storycard_id", 1]]
+  [1m[35mStorycard Load (0.1ms)[0m  SELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?  [["parent_id", 1]]
+Completed 200 OK in 10ms (Views: 5.8ms | ActiveRecord: 0.5ms)

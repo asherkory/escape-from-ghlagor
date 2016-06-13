@@ -1,7 +1,8 @@
 <h3>Inventory</h3>
 
+Search: <input type="search" ng-model="ctrl.search">
 <ul>
-  <li ng-repeat="item in ctrl.currentItems">
+  <li ng-repeat="item in ctrl.currentItems | filter: ctrl.search ">
     <item-summary
       name="item.name"
       category="item.inventory_category"
