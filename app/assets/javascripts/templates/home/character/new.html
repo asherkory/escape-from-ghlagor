@@ -1,3 +1,5 @@
+<h3>New Character</h3>
+
 <form novalidate name="form" ng-submit="ctrl.addCharacter()">
   <p ng-class="{ 'has-error': form.name.$invalid && !form.name.$pristine }"><label>Name: <input type="text" name="name" required ng-model="ctrl.character.name"></label></p>
 

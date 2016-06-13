@@ -1,7 +1,21 @@
-<h3>{{ ctrl.character.name }}</h3>
-<p><em>Gender:</em> {{ ctrl.character.gender }}</p>
+<h3>{{ ctrl.character.name }}</h3> <button ng-click="ctrl.showNameForm()">Change Name</button>
+<form ng-show="ctrl.visibleName" ng-submit="ctrl.editCharacter()">
+  <input type="text" name="name" ng-model="ctrl.character.name">
+  <input type="submit" value="Save Changes">
+</form>
+
+<p><em>Gender:</em> {{ ctrl.character.gender }}</p> <button ng-click="ctrl.showGenderForm()">Change Gender</button>
+<form ng-show="ctrl.visibleGender" ng-submit="ctrl.editCharacter()">
+  <input type="text" name="gender" ng-model="ctrl.character.gender">
+  <input type="submit" value="Save Changes">
+</form>
+
 <p><em>Homeworld:</em> {{ ctrl.character.homeworld }}</p>
 <p><em>Skin Color:</em> {{ ctrl.character.skin }}</p>
 <p><em>Hair Color:</em> {{ ctrl.character.hair }}</p>
 <p><em>Style:</em> {{ ctrl.character.style }}</p>
 <p><em>Personality:</em> {{ ctrl.character.personality }}</p>
+
+
+
+
