@@ -1,5 +1,7 @@
-function CharacterShowController () {
-  
+function CharacterShowController (Character, $stateParams) {
+  var ctrl = this;
+
+  ctrl.character = Character.get({ id: $stateParams.id });
 }
 
 angular
