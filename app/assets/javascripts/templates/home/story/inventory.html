@@ -1,8 +1,16 @@
-<h3>Inventory</h3>
+<p><input class="form-control" type="search" ng-model="ctrl.search"><span class="glyphicon glyphicon-search"></span></input></p>
+<p>Filter by Category: 
+  <select class="form-control" ng-model="ctrl.search">
+    <option value="">See All</option>
+    <option value="Clothing">Clothing</option>
+    <option value="Technology">Technology</option>
+    <option value="Weapons">Weapons</option>
+    <option value="Valuables">Valuables</option>
+  </select>
+</p>
 
-Search: <input type="search" ng-model="ctrl.search">
-<ul>
-  <li ng-repeat="item in ctrl.currentItems | filter: ctrl.search ">
+<ul class="list-group">
+  <li class="list-group-item" ng-repeat="item in ctrl.currentItems | filter: ctrl.search "> 
     <item-summary
       name="item.name"
       category="item.inventory_category"

@@ -11,12 +11,12 @@ var ItemSummary = {
     };
   },
   template: [ 
-    '<div class="item-summary">',
+    '<div>',
       '<a ui-sref="home.story.item({id: ctrl.id})">',
         '<h4>{{ ctrl.name }}</h4>',
       '</a>',
       '<p><em>{{ ctrl.category }}</em></p>',
-      '<button ng-click="ctrl.removeFromInventory(ctrl.id)">Remove</button>',
+      '<button class="btn btn-default" ng-click="ctrl.removeFromInventory(ctrl.id)">Remove</button>',
     '</div>'
   ].join('')
 };

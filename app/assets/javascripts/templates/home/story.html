@@ -1,8 +1,13 @@
-<h3>Story</h3>
-
-<div class="story-nav">
-  <a ui-sref="home.story.inventory">Inventory</a>
+<div class="page-header">
+  <h3>Story</h3>
 </div>
+
+<nav class="navbar">
+  <ul class="nav navbar-nav">
+    <li><a ui-sref="home.story">Story</a></li>
+    <li><a ui-sref="home.story.inventory">Inventory</a></li>
+  </ul>
+</nav>
 
 <div ui-view>
   <storycard-card
@@ -10,7 +15,7 @@
     content="ctrl.story.storycard.content"
     children="ctrl.story.storycard.children"
     items="ctrl.story.storycard.items"
-    removableItems="ctrl.story.storycard.removable_items"
+    removable="ctrl.story.storycard.removable_items"
     id="ctrl.story.storycard.id">
   </storycard-card>
 </div>

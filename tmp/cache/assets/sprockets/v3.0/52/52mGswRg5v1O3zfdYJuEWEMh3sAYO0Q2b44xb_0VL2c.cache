@@ -1,0 +1,21 @@
+{:uriI"‡file://app/assets/javascripts/templates/home.html?type=text/ng-html&id=cb1a4dd86e89634679099f5101dd7ddc09665aeab2c06e507b6ea45eb9ae0f74:ET:load_pathI"app/assets/javascripts;T:filenameI"/app/assets/javascripts/templates/home.html;T:	nameI"templates/home;T:logical_pathI"templates/home.html;T:content_typeI"text/ng-html;T:sourceI"ì<h2>Escape from Ghlagor: A Sci-fi Choose Your Own Adventure Game</h2>
+
+<div class="home-nav">
+  <ul>
+    <li><a ui-sref="home">Home</a></li>
+    <li><a ui-sref="home.about">About</a></li>
+    <li><a ui-sref="home.story">Story</a></li>
+    <li><a ui-sref="home.character">Character Creator</a></li>
+  </ul>
+</div>
+
+<div ui-view>
+  <p>Welcome to the prison moon of Ghlagor. The galaxy awaits -- are you ready to escape?</p>
+  <a ui-sref="home.story"><button>Start playing!</button></a>
+</div>
+
+;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"=file-digest://app/assets/javascripts/templates/home.html;TT:charsetI"
+utf-8;F:digest"%›x×7¢ÙÚÝt9âkÈâ?µœ]¸.‚x0y¶Uqx:lengthiì:dependencies_digest"%	iT4\ú\“¬¯þ(PC¿Bu+ÖÙgYŠ‰µÎÒ6¾:idI"Ecb1a4dd86e89634679099f5101dd7ddc09665aeab2c06e507b6ea45eb9ae0f74;F:
+mtimel+’o\W

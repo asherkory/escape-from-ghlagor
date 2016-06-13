@@ -1,0 +1,24 @@
+{:uriI"—file://app/assets/javascripts/templates/home/story/inventory.html?type=text/ng-html&id=303d212df9528598cf44e18963eaea872661840c2890cca927073edbefaab413:ET:load_pathI"app/assets/javascripts;T:filenameI"?app/assets/javascripts/templates/home/story/inventory.html;T:	nameI"#templates/home/story/inventory;T:logical_pathI"(templates/home/story/inventory.html;T:content_typeI"text/ng-html;T:sourceI"Ä<p><input class="form-control" type="search" ng-model="ctrl.search"><span class="glyphicon glyphicon-search"></span></input></p>
+<p>Filter by Category: 
+  <select class="form-control" ng-model="ctrl.search">
+    <option value="">See All</option>
+    <option value="Clothing">Clothing</option>
+    <option value="Technology">Technology</option>
+    <option value="Weapons">Weapons</option>
+    <option value="Valuables">Valuables</option>
+  </select>
+</p>
+
+<ul class="list-group">
+  <li class="list-group-item" ng-repeat="item in ctrl.currentItems | filter: ctrl.search "> 
+    <item-summary
+      name="item.name"
+      category="item.inventory_category"
+      id="item.id">
+    </item-summary>
+  </li>
+</ul>;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Mfile-digest://app/assets/javascripts/templates/home/story/inventory.html;TT:charsetI"
+utf-8;F:digest"%-ü»€Þ®_ü×·Ü¶ª2é1{Åug¸ãÿÔD:lengthiÄ:dependencies_digest"%n¶æeí¢º¬i>ÇÚ*Ù?ç)$½#el:XÙ.Ü²ó:idI"E303d212df9528598cf44e18963eaea872661840c2890cca927073edbefaab413;F:
+mtimel+ø&_W

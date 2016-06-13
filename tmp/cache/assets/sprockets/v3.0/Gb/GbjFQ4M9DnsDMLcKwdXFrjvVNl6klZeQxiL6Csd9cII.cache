@@ -1,11 +1,0 @@
-{:uriI"’file://app/assets/javascripts/templates/home/story/item.html?type=text/ng-html&id=c82b84d78c2d5c7c7c2b37289eb08064fad0974a63766f1c2d93bb7784a67575:ET:load_pathI"app/assets/javascripts;T:filenameI":app/assets/javascripts/templates/home/story/item.html;T:	nameI"templates/home/story/item;T:logical_pathI"#templates/home/story/item.html;T:content_typeI"text/ng-html;T:sourceI"“<h3>Item</h3>
-
-<item-detail
-  name="ctrl.item.name"
-  category="ctrl.item.inventory_category"
-  description="ctrl.item.description">
-</item-detail>;T:metadata{	:dependencieso:Set:
-@hash{
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Hfile-digest://app/assets/javascripts/templates/home/story/item.html;TT:charsetI"
-utf-8;F:digest"%ÆxŠ‹Ì·&šÐƒø–6RlqhÖ^¾^êï	„¹:lengthi“:dependencies_digest"%C6ÕN;8·.<ÜûsÉ‹@bfÊ1÷-ùå ;ZÍ&:idI"Ec82b84d78c2d5c7c7c2b37289eb08064fad0974a63766f1c2d93bb7784a67575;F:
-mtimel+ùYW

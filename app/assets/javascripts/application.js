@@ -3,4 +3,7 @@
 //= require angular-resource
 //= require angular-rails-templates
 //= require angular-sanitize
+//= require bootstrap-sprockets 
+//= require jquery 
+//= require jquery_ujs
 //= require_tree .

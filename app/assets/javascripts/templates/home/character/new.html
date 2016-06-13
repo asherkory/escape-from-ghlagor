@@ -1,98 +1,113 @@
 <h3>New Character</h3>
 
-<form novalidate name="form" ng-submit="ctrl.addCharacter()">
-  <p ng-class="{ 'has-error': form.name.$invalid && !form.name.$pristine }"><label>Name: <input type="text" name="name" required ng-model="ctrl.character.name"></label></p>
+<form role="form" novalidate name="form" ng-submit="ctrl.addCharacter()">
+  
+  <div class="form-group">
+    <p ng-class="{ 'has-error': form.name.$invalid && !form.name.$pristine }"><label>Name: <input class="form-control" type="text" name="name" required ng-model="ctrl.character.name"></label></p>
+  </div>
 
   <div ng-if="form.name.$touched && form.name.$error.required">Please enter a name!</div>
 
-  <p><label>Gender: <input type="text" name="gender" ng-model="ctrl.character.gender"></label></p>
+  <div class="form-group">
+    <p><label>Gender: <input class="form-control" type="text" name="gender" ng-model="ctrl.character.gender"></label></p>
+  </div>
 
-
-  <p><label>Homeworld: <br>
-    <p><input type="radio" name="homeworld" ng-model="ctrl.character.homeworld" value="Xishen Outpost: A prosperous but remote trading post on the edges of Human space, connecting more civilized Human worlds with fringe Enphaylae and Xhiff colonies. Xishen natives are familiar with many alien races, but often have suspicious attitudes.">
+  <div class="form-group">
+    <p>
+      <label>Homeworld: <br>
+      <p><input class="form-control" type="radio" name="homeworld" ng-model="ctrl.character.homeworld" value="Xishen Outpost: A prosperous but remote trading post on the edges of Human space, connecting more civilized Human worlds with fringe Enphaylae and Xhiff colonies. Xishen natives are familiar with many alien races, but often have suspicious attitudes.">
           Xishen Outpost: A prosperous but remote trading post on the edges of Human space, connecting more civilized Human worlds with fringe Enphaylae and Xhiff colonies. Xishen natives are familiar with many alien races, but often have suspicious attitudes.
-        </input></p>
-    <p><input type="radio" name="homeworld" ng-model="ctrl.character.homeworld" value="Kiinoki City: One of the foremost Nekodiim city-worlds, a center of the arts and civilization. As the Nekodiim are the sponsor race for Humans in the Galactic Council, Humans are welcome on their worlds.">
-          Kiinoki City: One of the foremost Nekodiim city-worlds, a center of the arts and civilization. As the Nekodiim are the sponsor race for Humans in the Galactic Council, Humans are welcome on their worlds.
-        </input></p>
-    <p><input type="radio" name="homeworld" ng-model="ctrl.character.homeworld" value="Colony of the New Dawn: An isolated, restrictive, religious-oriented Human-only colony.">
-          Colony of the New Dawn: An isolated, restrictive, religious-oriented Human-only colony.
-        </input></p>
-    <p><input type="radio" name="homeworld" ng-model="ctrl.character.homeworld" value="New Earth: The first major Human colony from its first steps into the wider galaxy, now a major hub of politics and commerce.">
-          New Earth: The first major Human colony from its first steps into the wider galaxy, now a major hub of politics and commerce.
-        </input></p>
-    <p><input type="radio" name="homeworld" ng-model="ctrl.character.homeworld" value="Laerea: An experimental inter-species commune located on a protected forest moon near Volarian space.">
-          Laerea: An experimental inter-species commune located on a protected forest moon near Volarian space.
-        </input></p>
-    <p><input type="radio" name="homeworld" ng-model="ctrl.character.homeworld" value="Calliope Station: A moderately successful space station supporting the mining colony of the gas giant Calliope Twelve-Z. Mostly blue-collar workers and administrative staff of several alien races.">
-          Calliope Station: A moderately successful space station supporting the mining colony of the gas giant Calliope Twelve-Z. Mostly blue-collar workers and administrative staff of several alien races.
-        </input></p>
-  </label></p>
+      </input></p>
+      <p><input class="form-control" type="radio" name="homeworld" ng-model="ctrl.character.homeworld" value="Kiinoki City: One of the foremost Nekodiim city-worlds, a center of the arts and civilization. As the Nekodiim are the sponsor race for Humans in the Galactic Council, Humans are welcome on their worlds.">
+            Kiinoki City: One of the foremost Nekodiim city-worlds, a center of the arts and civilization. As the Nekodiim are the sponsor race for Humans in the Galactic Council, Humans are welcome on their worlds.
+      </input></p>
+      <p><input class="form-control" type="radio" name="homeworld" ng-model="ctrl.character.homeworld" value="Colony of the New Dawn: An isolated, restrictive, religious-oriented Human-only colony.">
+            Colony of the New Dawn: An isolated, restrictive, religious-oriented Human-only colony.
+      </input></p>
+      <p><input class="form-control" type="radio" name="homeworld" ng-model="ctrl.character.homeworld" value="New Earth: The first major Human colony from its first steps into the wider galaxy, now a major hub of politics and commerce.">
+            New Earth: The first major Human colony from its first steps into the wider galaxy, now a major hub of politics and commerce.
+      </input></p>
+      <p><input class="form-control" type="radio" name="homeworld" ng-model="ctrl.character.homeworld" value="Laerea: An experimental inter-species commune located on a protected forest moon near Volarian space.">
+            Laerea: An experimental inter-species commune located on a protected forest moon near Volarian space.
+      </input></p>
+      <p><input class="form-control" type="radio" name="homeworld" ng-model="ctrl.character.homeworld" value="Calliope Station: A moderately successful space station supporting the mining colony of the gas giant Calliope Twelve-Z. Mostly blue-collar workers and administrative staff of several alien races.">
+            Calliope Station: A moderately successful space station supporting the mining colony of the gas giant Calliope Twelve-Z. Mostly blue-collar workers and administrative staff of several alien races.
+      </input></p>
+    </label></p>
+  </div>
   
-  <p><label>Skin Color: 
-    <select name="skin" ng-model="ctrl.character.skin">
-      <option value="Pale Pink">Pale Pink</option>
-      <option value="Brown">Brown</option>
-      <option value="Black">Black</option>
-      <option value="Gold">Gold</option>
-      <option value="Grey">Grey</option>
-      <option value="Yellow">Yellow</option>
-      <option value="Blue">Blue</option>
-      <option value="Green">Green</option>
-      <option value="Purple">Purple</option>
-      <option value="Scaly">Scaly</option>
-      <option value="Furry">Furry</option>
-    </select>
-  </label></p>
+  <div class="form-group">
+    <p><label>Skin Color: 
+      <select class="form-control" name="skin" ng-model="ctrl.character.skin">
+        <option value="Pale Pink">Pale Pink</option>
+        <option value="Brown">Brown</option>
+        <option value="Black">Black</option>
+        <option value="Gold">Gold</option>
+        <option value="Grey">Grey</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Blue">Blue</option>
+        <option value="Green">Green</option>
+        <option value="Purple">Purple</option>
+        <option value="Scaly">Scaly</option>
+        <option value="Furry">Furry</option>
+      </select>
+    </label></p>
+  </div>
 
-  <p><label>Hair Color: 
-    <select name="hair" ng-model="ctrl.character.hair">
-      <option value="Red">Red</option>
-      <option value="Brown">Brown</option>
-      <option value="Blonde">Blonde</option>
-      <option value="Black">Black</option>
-      <option value="White">White</option>
-      <option value="Blue">Blue</option>
-      <option value="Green">Green</option>
-      <option value="Purple">Purple</option>
-      <option value="Rainbow">Rainbow</option>
-      <option value="None">None</option>
-    </select>
-  </label></p>
+  <div class="form-group">
+    <p><label>Hair Color: 
+      <select class="form-control" name="hair" ng-model="ctrl.character.hair">
+        <option value="Red">Red</option>
+        <option value="Brown">Brown</option>
+        <option value="Blonde">Blonde</option>
+        <option value="Black">Black</option>
+        <option value="White">White</option>
+        <option value="Blue">Blue</option>
+        <option value="Green">Green</option>
+        <option value="Purple">Purple</option>
+        <option value="Rainbow">Rainbow</option>
+        <option value="None">None</option>
+      </select>
+    </label></p>
+  </div>
 
-  <p><label>Style:
-    <select name="style" ng-model="ctrl.character.style">
-      <option value="Practical">Practical</option>
-      <option value="Rustic">Rustic</option>
-      <option value="New Goth">New Goth</option>
-      <option value="Downplayed Wealth">Downplayed Wealth</option>
-      <option value="Cyberpunk">Cyberpunk</option>
-      <option value="Dapper">Dapper</option>
-      <option value="Artsy Weird">Artsy Weird</option>
-      <option value="Inappropriate">Inappropriate</option>
-      <option value="Unlucky Hitchhiker">Unlucky Hitchhiker</option>
-    </select>
-  </label></p>
+  <div class="form-group">
+    <p><label>Style:
+      <select class="form-control" name="style" ng-model="ctrl.character.style">
+        <option value="Practical">Practical</option>
+        <option value="Rustic">Rustic</option>
+        <option value="New Goth">New Goth</option>
+        <option value="Downplayed Wealth">Downplayed Wealth</option>
+        <option value="Cyberpunk">Cyberpunk</option>
+        <option value="Dapper">Dapper</option>
+        <option value="Artsy Weird">Artsy Weird</option>
+        <option value="Inappropriate">Inappropriate</option>
+        <option value="Unlucky Hitchhiker">Unlucky Hitchhiker</option>
+      </select>
+    </label></p>
+  </div>
 
-  <p><label>Personality: 
-    <select name="personality" ng-model="ctrl.character.personality">
-      <option value="Angsty Antihero">Angsty Antihero</option>
-      <option value="Lovable Rogue">Lovable Rogue</option>
-      <option value="Life of the Party">Life of the Party</option>
-      <option value="Do-gooder">Do-gooder</option>
-      <option value="Out for Revenge">Out for Revenge</option>
-      <option value="Ice Queen/King">Ice Queen/King</option>
-      <option value="Wolf in Sheep's Clothing">Wolf in Sheep's Clothing</option>
-      <option value="Court Jester">Court Jester</option>
-      <option value="Cackling Villain">Cackling Villain</option>
-      <option value="Mysterious Stranger">Mysterious Stranger</option>
-      <option value="Bumbling Sidekick">Bumbling Sidekick</option>
-      <option value="Kind of a Jerk">Kind of a Jerk</option>
-      <option value="Tough Loner with a Heart of Gold">Tough Loner with a Heart of Gold</option>
-      <option value="Space Cadet">Space Cadet</option>
-    </select>
-  </label></p>
+  <div class="form-group">
+    <p><label>Personality: 
+      <select class="form-control" name="personality" ng-model="ctrl.character.personality">
+        <option value="Angsty Antihero">Angsty Antihero</option>
+        <option value="Lovable Rogue">Lovable Rogue</option>
+        <option value="Life of the Party">Life of the Party</option>
+        <option value="Do-gooder">Do-gooder</option>
+        <option value="Out for Revenge">Out for Revenge</option>
+        <option value="Ice Queen/King">Ice Queen/King</option>
+        <option value="Wolf in Sheep's Clothing">Wolf in Sheep's Clothing</option>
+        <option value="Court Jester">Court Jester</option>
+        <option value="Cackling Villain">Cackling Villain</option>
+        <option value="Mysterious Stranger">Mysterious Stranger</option>
+        <option value="Bumbling Sidekick">Bumbling Sidekick</option>
+        <option value="Kind of a Jerk">Kind of a Jerk</option>
+        <option value="Tough Loner with a Heart of Gold">Tough Loner with a Heart of Gold</option>
+        <option value="Space Cadet">Space Cadet</option>
+      </select>
+    </label></p>
+  </div>
 
-  <p><input type="submit" value="Save"></p>
+  <p><input class="btn btn-primary" type="submit" value="Save"></p>
 
 </form>

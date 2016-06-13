@@ -1,0 +1,27 @@
+{:uriI"–file://app/assets/javascripts/templates/home/character/show.html?type=text/ng-html&id=f9c5e17464277e8e84ae9c9b1725be2527348a1246ea334d1eea22a8c5043a57:ET:load_pathI"app/assets/javascripts;T:filenameI">app/assets/javascripts/templates/home/character/show.html;T:	nameI""templates/home/character/show;T:logical_pathI"'templates/home/character/show.html;T:content_typeI"text/ng-html;T:sourceI"<h4>{{ ctrl.character.name }} <button class="btn btn-default" ng-click="ctrl.showNameForm()">Change Name</button></h4>
+<form role="form" ng-show="ctrl.visibleName" ng-submit="ctrl.editCharacter()">
+  <input class="form-control" type="text" name="name" ng-model="ctrl.character.name"> 
+  <input class="btn btn-info" type="submit" value="Save Changes">
+</form>
+
+<p><h5>Gender:</h5> {{ ctrl.character.gender }} <button class="btn btn-default" ng-click="ctrl.showGenderForm()">Change Gender</button></p>
+<form role="form" ng-show="ctrl.visibleGender" ng-submit="ctrl.editCharacter()">
+  <input class="form-control" type="text" name="gender" ng-model="ctrl.character.gender"> 
+  <input class="btn btn-info" type="submit" value="Save Changes">
+</form>
+
+<p><h5>Homeworld:</h5> {{ ctrl.character.homeworld }}</p>
+<p><h5>Skin Color:</h5> {{ ctrl.character.skin }}</p>
+<p><h5>Hair Color:</h5> {{ ctrl.character.hair }}</p>
+<p><h5>Style:</h5> {{ ctrl.character.style }}</p>
+<p><h5>Personality:</h5> {{ ctrl.character.personality }}</p>
+
+
+
+
+;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Lfile-digest://app/assets/javascripts/templates/home/character/show.html;TT:charsetI"
+utf-8;F:digest"%ıL‰­ı2 9ÓO£dôAì4«í;F9 :lengthi:dependencies_digest"%åº¾—n›&]êº‹bi¶RË
+=œT„Y-9r†Ú·:idI"Ef9c5e17464277e8e84ae9c9b1725be2527348a1246ea334d1eea22a8c5043a57;F:
+mtimel+Q&_W

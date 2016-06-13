@@ -1,0 +1,23 @@
+{:uriI"file://app/assets/javascripts/templates/home/story.html?type=text/ng-html&id=74ee62378a6f80d86b4a725ef7f600be8739a493678782feafc4683dda3dd1b9:ET:load_pathI"app/assets/javascripts;T:filenameI"5app/assets/javascripts/templates/home/story.html;T:	nameI"templates/home/story;T:logical_pathI"templates/home/story.html;T:content_typeI"text/ng-html;T:sourceI"â<h3>Story</h3>
+
+<div class="story-nav">
+  <ul>
+    <li><a ui-sref="home.story.inventory">Inventory</a></li>
+    <li><a ui-sref="home.story">Story</a></li>
+  </ul>
+</div>
+
+<div ui-view>
+  <storycard-card
+    title="ctrl.story.storycard.title"
+    content="ctrl.story.storycard.content"
+    children="ctrl.story.storycard.children"
+    items="ctrl.story.storycard.items"
+    removable="ctrl.story.storycard.removable_items"
+    id="ctrl.story.storycard.id">
+  </storycard-card>
+</div>;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Cfile-digest://app/assets/javascripts/templates/home/story.html;TT:charsetI"
+utf-8;F:digest"%û›4Øw2ûĞ¸åª¹şrü`Ç)ÇlLÑÁïx=4ÎÛØi¸:lengthiâ:dependencies_digest"%ëç{õòŠŠ4‘!_ó{ÈO)è¹lÓZŒ…™1@„$®(:idI"E74ee62378a6f80d86b4a725ef7f600be8739a493678782feafc4683dda3dd1b9;F:
+mtimel+ ç^W

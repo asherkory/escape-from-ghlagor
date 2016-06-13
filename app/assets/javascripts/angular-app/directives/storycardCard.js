@@ -1,4 +1,4 @@
-function StorycardCard () {
+function StorycardCard (InventoryService) {
   return {
     scope: {},
     bindToController: {
@@ -6,11 +6,11 @@ function StorycardCard () {
       content: '=',
       children: '=',
       items: '=',
-      id: '=',
-      removableItems: '='
+      removable: '=',
+      id: '='
     },
     controllerAs: 'ctrl',
-    controller: function ($rootScope, InventoryService) {
+    controller: function ($rootScope) {
       var ctrl = this;
 
       ctrl.addToInventory = function (itemId) { 
@@ -22,30 +22,29 @@ function StorycardCard () {
       };   
     },
     template: [
-      '<div class="storycard-card">',
-        '<h3>{{ ctrl.title }}</h3>',
-        '<h4>{{ ctrl.removableItems }}</h4>', // why isn't this showing up?
+      '<div>',
+        '<h4>{{ ctrl.title }}</h4>',
         '<p ng-bind-html="ctrl.content"></p>',
-        '<ul>',
-          '<li ng-repeat="choice in ctrl.children">',
-            '<h4 ng-click="ctrl.changeStory(choice.id)">{{ choice.title }} {{ choice.id }}</h4>', 
-          '</li>',
-        '</ul>',
-        '<h3 ng-if="ctrl.items.length > 0">Items:</h3>',
+        '<h4 ng-if="ctrl.items.length > 0">Items</h4>',
         '<ul>',
           '<li ng-repeat="item in ctrl.items">',
-            '<h4>{{ item.name }}</h4>',
-            '<button ng-click="ctrl.addToInventory(item.id)">Add to Inventory</button>',
+            '<h5>{{ item.name }} ',
+            '<button class="btn btn-info" ng-click="ctrl.addToInventory(item.id)">Add to Inventory</button></h5>',
           '</li>',
         '</ul>',
+        '<div class="list-group">',
+          '<a href="" class="list-group-item" ng-repeat="choice in ctrl.children">',
+            '<h5 ng-click="ctrl.changeStory(choice.id)">{{ choice.title }} {{ choice.id }}</h5>', 
+          '</a>',
+        '</div>',
       '</div>'
     ].join(''),
     restrict: 'E',
-    // link: function (scope, element, attrs, ctrl, InventoryService) { // this probably isn't working; put in controller?
-    //   angular.forEach(ctrl.removableItems, function (item) {
-    //     InventoryService.removeFromInventory(item.id);
-    //   });
-    // }
+    link: function (scope, element, attrs, ctrl) { // this is working too well
+      // angular.forEach(ctrl.removable, function (item) {
+      //   InventoryService.removeFromInventory(item.id);
+      // });
+    }
   };
 }
 

@@ -1,0 +1,33 @@
+{:uriI"‡file://app/assets/javascripts/templates/home.html?type=text/ng-html&id=d1115f7d8121514288e63185f5f420065777c355f7a53ce9a811ed412545a018:ET:load_pathI"app/assets/javascripts;T:filenameI"/app/assets/javascripts/templates/home.html;T:	nameI"templates/home;T:logical_pathI"templates/home.html;T:content_typeI"text/ng-html;T:sourceI"<div class="jumbotron">
+  <h2>Escape from Ghlagor <small>A Sci-fi Choose Your Own Adventure Game</small></h2>
+</div>
+
+<nav class="navbar navbar-default">
+  <ul class="nav navbar-nav">
+    <li><a ui-sref="home">Home</a></li>
+    <li><a ui-sref="home.about">About</a></li>
+    <li><a ui-sref="home.story">Story</a></li>
+    <li><a ui-sref="home.character">Character Creator</a></li>
+  </ul>
+</nav>
+
+<div class="row">
+  <div class="col-md-12" ui-view>
+    <p>Welcome to the prison moon of Ghlagor. The galaxy awaits -- are you ready to escape?</p>
+    <a ui-sref="home.story"><button class="btn btn-primary">Start playing!</button></a>
+  </div>
+</div>
+
+<footer class="footer"> 
+  <nav class="navbar navbar-bottom">
+      <p class="text-muted">&copy; Rachel Kory 2016</p>
+  </nav>
+</footer>
+
+
+
+;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"=file-digest://app/assets/javascripts/templates/home.html;TT:charsetI"
+utf-8;F:digest"%øÕÎ€Ú`Ì¿Oß©žÇ†Bó“×<ùô™Î8›&ÁD6:lengthi:dependencies_digest"%´hí=ÿ4œÊÍŒú-·ÑŒ°Ô¯(ƒjn^ú4ñCfó:idI"Ed1115f7d8121514288e63185f5f420065777c355f7a53ce9a811ed412545a018;F:
+mtimel+§+_W

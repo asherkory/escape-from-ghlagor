@@ -1,0 +1,27 @@
+{:uriI"ófile://app/assets/javascripts/templates/home/story/inventory.html?type=text/ng-html&id=a9f7d98ccb4c73b8514a8b34cc0ceafcf289ea7b14d6d5d2bb4c2016c31ce6a2:ET:load_pathI"app/assets/javascripts;T:filenameI"?app/assets/javascripts/templates/home/story/inventory.html;T:	nameI"#templates/home/story/inventory;T:logical_pathI"(templates/home/story/inventory.html;T:content_typeI"text/ng-html;T:sourceI"S<h3>Inventory</h3>
+
+<p>Search: <input type="search" ng-model="ctrl.search"></p>
+<p>Filter by Category: 
+  <select ng-model="ctrl.search">
+    <option value="">See All</option>
+    <option value="Clothing">Clothing</option>
+    <option value="Technology">Technology</option>
+    <option value="Weapons">Weapons</option>
+    <option value="Valuables">Valuables</option>
+  </select>
+</p>
+
+<ul>
+  <li ng-repeat="item in ctrl.currentItems | filter: ctrl.search "> 
+    <item-summary
+      name="item.name"
+      category="item.inventory_category"
+      id="item.id">
+    </item-summary>
+  </li>
+</ul>;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Mfile-digest://app/assets/javascripts/templates/home/story/inventory.html;TT:charsetI"
+utf-8;F:digest"%íΩÔ∫Ω>
+d∏∆Œ‰b|_`Ç˝Í…ô(∞˘ïÇEÄuã::lengthiS:dependencies_digest"%∏;ç’1Ë¢≤KÚ∫∞•kifóNö_÷‚…8áÁx:idI"Ea9f7d98ccb4c73b8514a8b34cc0ceafcf289ea7b14d6d5d2bb4c2016c31ce6a2;F:
+mtimel+)·^W

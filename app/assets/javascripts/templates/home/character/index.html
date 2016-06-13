@@ -1,6 +1,6 @@
-<ul>
-  <li ng-repeat="character in ctrl.characters.characters">
-    <h3><a ui-sref="home.character.show({ id: character.id })">{{ character.name }}</a></h3>
+<ul class="list-group">
+  <li class="list-group-item" ng-repeat="character in ctrl.characters.characters">
+    <h4><a ui-sref="home.character.show({ id: character.id })">{{ character.name }}</a></h4>
     <p><em>Gender:</em> {{ character.gender }}</p>
     <p><em>Homeworld:</em> {{ character.homeworld }}</p>
   </li>
