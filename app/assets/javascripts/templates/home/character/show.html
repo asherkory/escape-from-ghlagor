@@ -1,11 +1,11 @@
 <h4>{{ ctrl.character.name }} <button class="btn btn-default" ng-click="ctrl.showNameForm()">Change Name</button></h4>
-<form role="form" ng-show="ctrl.visibleName" ng-submit="ctrl.editCharacter()">
+<form role="form" ng-show="ctrl.visibleName" ng-submit="ctrl.editCharacter('n')">
   <input class="form-control" type="text" name="name" ng-model="ctrl.character.name"> 
   <input class="btn btn-info" type="submit" value="Save Changes">
 </form>
 
 <p><h5>Gender:</h5> {{ ctrl.character.gender }} <button class="btn btn-default" ng-click="ctrl.showGenderForm()">Change Gender</button></p>
-<form role="form" ng-show="ctrl.visibleGender" ng-submit="ctrl.editCharacter()">
+<form role="form" ng-show="ctrl.visibleGender" ng-submit="ctrl.editCharacter('g')">
   <input class="form-control" type="text" name="gender" ng-model="ctrl.character.gender"> 
   <input class="btn btn-info" type="submit" value="Save Changes">
 </form>

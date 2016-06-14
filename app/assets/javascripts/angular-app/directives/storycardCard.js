@@ -15,6 +15,8 @@ function StorycardCard (InventoryService) {
 
       ctrl.addToInventory = function (itemId) { 
         InventoryService.addToInventory(itemId);
+        var item = angular.element(document.querySelector('#item' + itemId));
+        item.html('<p class="bg-success">Item added!</p>');
       };
 
       ctrl.changeStory = function (storyId) {
@@ -27,20 +29,20 @@ function StorycardCard (InventoryService) {
         '<p ng-bind-html="ctrl.content"></p>',
         '<h4 ng-if="ctrl.items.length > 0">Items</h4>',
         '<ul>',
-          '<li ng-repeat="item in ctrl.items">',
+          '<li ng-repeat="item in ctrl.items" id="item{{ item.id }}">',
             '<h5>{{ item.name }} ',
             '<button class="btn btn-info" ng-click="ctrl.addToInventory(item.id)">Add to Inventory</button></h5>',
           '</li>',
         '</ul>',
         '<div class="list-group">',
-          '<a href="" class="list-group-item" ng-repeat="choice in ctrl.children">',
-            '<h5 ng-click="ctrl.changeStory(choice.id)">{{ choice.title }} {{ choice.id }}</h5>', 
+          '<a class="list-group-item choice" ng-repeat="choice in ctrl.children">',
+            '<h5 ng-click="ctrl.changeStory(choice.id)">{{ choice.title }}</h5>', 
           '</a>',
         '</div>',
       '</div>'
     ].join(''),
     restrict: 'E',
-    link: function (scope, element, attrs, ctrl) { // this is working too well
+    link: function (scope, element, attrs, ctrl) { 
       // angular.forEach(ctrl.removable, function (item) {
       //   InventoryService.removeFromInventory(item.id);
       // });

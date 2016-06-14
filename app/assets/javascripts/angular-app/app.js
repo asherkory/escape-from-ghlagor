@@ -48,5 +48,5 @@ angular
         controller: 'ItemController as ctrl'
       })
 
-    // $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/');
   });

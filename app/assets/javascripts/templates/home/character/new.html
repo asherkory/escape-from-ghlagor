@@ -2,11 +2,9 @@
 
 <form role="form" novalidate name="form" ng-submit="ctrl.addCharacter()">
   
-  <div class="form-group">
-    <p ng-class="{ 'has-error': form.name.$invalid && !form.name.$pristine }"><label>Name: <input class="form-control" type="text" name="name" required ng-model="ctrl.character.name"></label></p>
+  <div class="form-group" ng-class="{ 'has-error': form.name.$invalid && form.name.$touched }" >
+    <p><label>Name: <input class="form-control" type="text" name="name" required ng-model="ctrl.character.name"></label> <div ng-if="form.name.$touched && form.name.$error.required">Please enter a name!</div></p>
   </div>
-
-  <div ng-if="form.name.$touched && form.name.$error.required">Please enter a name!</div>
 
   <div class="form-group">
     <p><label>Gender: <input class="form-control" type="text" name="gender" ng-model="ctrl.character.gender"></label></p>

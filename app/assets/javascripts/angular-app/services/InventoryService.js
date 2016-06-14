@@ -6,7 +6,6 @@ function InventoryService (Item, $window) {
   srv.addToInventory = function (itemId) {
     var item = Item.get({ id: itemId });
     srv.currentItems.push(item);
-    $window.alert("Item added!");
   };
 
   srv.removeFromInventory = function (itemId) {
@@ -14,13 +13,12 @@ function InventoryService (Item, $window) {
       return item.id === itemId;
     });
     srv.currentItems.splice(position, 1);
-    $window.alert("Item removed!")
+    $window.alert("Item removed!");
   };
 
   srv.getCurrentItems = function () {
     return srv.currentItems;
   }
-
 }
 
 angular

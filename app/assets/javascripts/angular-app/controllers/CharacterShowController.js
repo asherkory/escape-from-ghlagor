@@ -14,9 +14,15 @@ function CharacterShowController (Character, $stateParams, $window) {
 
   ctrl.character = Character.get({ id: $stateParams.id });
 
-  ctrl.editCharacter = function () {
+  ctrl.editCharacter = function (property) {
     ctrl.character.$update(function () {
-      $window.alert("Character saved!")
+      // $window.alert("Character saved!")
+      if (property === 'g') {
+        ctrl.showGenderForm();
+      }
+      else if (property === 'n') {
+        ctrl.showNameForm();
+      }
     });
   };
 }
