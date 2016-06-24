@@ -1,0 +1,12 @@
+{:uriI"—file://app/assets/javascripts/templates/home/character/index.html?type=text/ng-html&id=3c09f5b5ee7bd0ab7ce4b4014d7291d8875ea66211f23590ead4d84cf1d4ad41:ET:load_pathI"app/assets/javascripts;T:filenameI"?app/assets/javascripts/templates/home/character/index.html;T:	nameI"#templates/home/character/index;T:logical_pathI"(templates/home/character/index.html;T:content_typeI"text/ng-html;T:sourceI"G<ul class="list-group">
+  <li class="list-group-item" ng-repeat="character in ctrl.characters.characters">
+    <h4><a ui-sref="home.character.show({ id: character.id })">{{ character.name }}</a></h4>
+    <p><em>Gender</em><br> {{ character.gender }}</p>
+    <p><em>Homeworld</em><br> {{ character.homeworld }}</p>
+  </li>
+</ul>;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"Mfile-digest://app/assets/javascripts/templates/home/character/index.html;TT:charsetI"
+utf-8;F:digest"%j!ä¸z"¤IÌ;#êË&í0»
+ñ½ý_7dw"Êï,:lengthiG:dependencies_digest"%[,JY~jŸE•_ëN~;—…>Ü@VE+Mqm:idI"E3c09f5b5ee7bd0ab7ce4b4014d7291d8875ea66211f23590ead4d84cf1d4ad41;F:
+mtimel+'‚_W
