@@ -16,12 +16,16 @@ function StorycardCard (InventoryService) {
       ctrl.addToInventory = function (itemId) { 
         InventoryService.addToInventory(itemId);
         var item = angular.element(document.querySelector('#item' + itemId));
-        item.html('<p class="bg-success">Item added!</p>');
+        item.html('<span class="label label-success">Item added!</span>');
       };
 
       ctrl.changeStory = function (storyId) {
         $rootScope.$broadcast('changeStory', storyId);
       };   
+
+      ctrl.notInInventory = function (itemId) {
+        return InventoryService.checkInventory(itemId);
+      };
     },
     template: [
       '<div>',
@@ -29,10 +33,12 @@ function StorycardCard (InventoryService) {
         '<p ng-bind-html="ctrl.content"></p>',
         '<h4 ng-if="ctrl.items.length > 0">Items</h4>',
         '<ul>',
-          '<li ng-repeat="item in ctrl.items" id="item{{ item.id }}">',
-            '<h5>{{ item.name }} ',
-            '<button class="btn btn-info" ng-click="ctrl.addToInventory(item.id)">Add to Inventory</button></h5>',
-          '</li>',
+          '<div ng-repeat="item in ctrl.items" id="item{{ item.id }}">',
+            '<li ng-if="ctrl.notInInventory(item.id)">', // if the item has not been added, show it
+              '<h5>{{ item.name }} ',
+              '<button class="btn btn-info" ng-click="ctrl.addToInventory(item.id)">Add to Inventory</button></h5>',
+            '</li>',
+          '</div>',
         '</ul>',
         '<div class="list-group">',
           '<a class="list-group-item choice" ng-repeat="choice in ctrl.children">',
