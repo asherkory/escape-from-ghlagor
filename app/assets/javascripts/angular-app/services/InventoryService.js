@@ -20,8 +20,15 @@ function InventoryService (Item, $window) {
     return srv.currentItems;
   };
 
-  srv.checkInventory = function (itemId) {
-
+  srv.notInInventory = function (itemId) {
+    if (srv.currentItems.find(function (item) {
+      return item.id === itemId;
+    })) {
+      return false;
+    }
+    else {
+      return true;
+    }
   };
 
   // srv.selectNewItems = function (storyItems) {

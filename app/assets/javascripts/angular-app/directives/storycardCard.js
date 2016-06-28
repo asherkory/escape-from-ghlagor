@@ -24,7 +24,7 @@ function StorycardCard (InventoryService) {
       };   
 
       ctrl.notInInventory = function (itemId) {
-        return InventoryService.checkInventory(itemId);
+        return InventoryService.notInInventory(itemId);
       };
     },
     template: [

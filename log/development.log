@@ -32979,3 +32979,190 @@ Processing by Api::ItemsController#show as JSON
   Parameters: {"id"=>"2"}
   [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 2]]
 Completed 200 OK in 13ms (Views: 6.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-06-28 18:31:45 -0400
+Processing by ApplicationController#index as HTML
+  Rendered application/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 840ms (Views: 838.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-41d003f1811857e7d24ca5da0a95668db71a9d57515a5d95b607e5b1fffaa12e.css?body=1" for ::1 at 2016-06-28 18:31:46 -0400
+
+
+Started GET "/assets/angular/angular.self-a3680fff57179d0080f9d5748ca2a23e287fbbf4425e8199ec882f4c37ff01f7.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.self-75b555bd54e64f7d2b5892cbb6def68576df012a8139b5917c51407de696d0de.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.self-c1f038d63d4a7f5c3f49e218cc670132decbbb4049cc722ac83c4d0b2786cad4.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-rails-templates.self-f73a25f00ce684992b28562a01665855f2aabcedd405901b89b47873f76ca8d1.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-sanitize/angular-sanitize.self-e1040ae16741ecd24a18763044d880d8f05a8128fb988b4c50988631c7f6eee5.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/app.self-c314ff8463770eb2c1c8efc3acd44dca13813032e8af3659f58e24bb754b615a.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterController.self-7b8e47f36c05bb2256ebf1e89ac3172d20e59e3b8d75d8c7b35ee2a4d8931ad5.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterIndexController.self-d66021af32abbbfe197c836e3dc722758d14627d547eda0f43ebbd6f7cfe7ad7.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/controllers/AboutController.self-47a796fa4b718540acb573e4c9066103f0a80bab0f98df56d4a46e14fda47063.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterNewController.self-c63aa15c8909d4526e5b6558df0ac5ee0311b549200fd0fc241e6ebf3278f088.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/controllers/CharacterShowController.self-fd1ae2787bb2df09836d5a822e2b00a2275226c7130e6cff5031ac2234e201a9.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/controllers/InventoryController.self-0af03289f742b9b8d6a5aafd2123ff7b6a2a876e6836fb1acf73ab16ec714abb.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/controllers/ItemController.self-c5f8b1ce0c55bcd1709836abe0895053076e84027444ae3afc6ceefc12719868.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/controllers/HomeController.self-d63839b687f6d5107624924c1e2db8ca064ef246631dcf53ee87c8dfae51c942.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/controllers/StoryController.self-4615bd7612de26e235c0e2114f608590f3a3aa00683e907c8e515a21903fe7ef.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/directives/itemDetail.self-105ffe12738224cea7b4f12133ac56543d27ec6e551931022505498ed6cf0eb2.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/directives/itemSummary.self-8bdaf46a8f3f9fe803a0816733d042e96d6a71a39c8b36ff878c3588bd1a8b33.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/directives/storycardCard.self-65a842d3d2aab99209a4a416436f28bb064dc5b00eb7fa31314664e8b40b42a3.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/models/Character.self-839bc942d1d0929068ae77a5bf9aa7dd4aeb9e93889809cbf921d753fad6484e.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/models/Storycard.self-67a18db137ffa354d9c5ace24b7264fe548c5314f779224918d2373e501694a1.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/models/Item.self-09c73f48a108f43390557c5cb05b3f9d32c94825845dc232f0be9f8994b215a3.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/angular-app/services/InventoryService.self-690673ce1f833142619b1e3d14928c66d38e939bbabfd29995c7c65da9c99c18.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/templates/home.self-2502347eadec213a3bb015c6d49a672c25661ff23008d5a2997f996daac5536b.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/templates/home/about.self-a25c2e0b329742a1aeac5ff29187d95b73bc4128b32d32cd4927ef26d8af70d6.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/templates/home/character.self-74d2ce10055b5f55f6ca8018de24f7d1ad939d43fea40b6b87bb34cde5dcacc5.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/templates/home/character/index.self-cab9d805099a51de6aba90571d9edb9aac049f57fed29357fe74cff248a99561.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/templates/home/character/show.self-179d8609a7b008755608ac44e3a50feb1f4a7b07e94698d73845087049ffb162.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/templates/home/character/new.self-e6c7eb61818d3d743f23fbbd722914c1029dbaa0fce974c1e5ec9e2796fdc22c.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/templates/home/story.self-365a43e704ec497488e2e8bb6530494767202f44529acb08af14e57f25a5c500.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/templates/home/story/inventory.self-8f97e2780d4e8c100c79975eb038ad9669712acecce846ac4995779b334e382b.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/templates/home/story/item.self-8f0d0352cb5f41fb81ce07c3ee120fed66329663fc6b0d1be08bbcac8adc2f7d.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/assets/application.self-1e135afb54bf948ed616b7e518ea9f59c8edad95a2d1dfbae8adc60b167c5f6c.js?body=1" for ::1 at 2016-06-28 18:31:47 -0400
+
+
+Started GET "/api/storycards/1.json" for ::1 at 2016-06-28 18:31:47 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mStorycard Load (0.5ms)[0m  SELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?[0m  [["storycard_id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_removable_items" ON "items"."id" = "storycard_removable_items"."removable_item_id" WHERE "storycard_removable_items"."removable_storycard_id" = ?  [["removable_storycard_id", 1]]
+  [1m[36mStorycard Load (0.1ms)[0m  [1mSELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?[0m  [["parent_id", 1]]
+Completed 200 OK in 26ms (Views: 14.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/storycards/2.json" for ::1 at 2016-06-28 18:31:49 -0400
+Processing by Api::StorycardsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mStorycard Load (0.1ms)[0m  SELECT  "storycards".* FROM "storycards" WHERE "storycards"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "storycard_items" ON "items"."id" = "storycard_items"."item_id" WHERE "storycard_items"."storycard_id" = ?[0m  [["storycard_id", 2]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" INNER JOIN "storycard_removable_items" ON "items"."id" = "storycard_removable_items"."removable_item_id" WHERE "storycard_removable_items"."removable_storycard_id" = ?  [["removable_storycard_id", 2]]
+  [1m[36mStorycard Load (0.3ms)[0m  [1mSELECT "storycards".* FROM "storycards" INNER JOIN "choices" ON "storycards"."id" = "choices"."child_id" WHERE "choices"."parent_id" = ?[0m  [["parent_id", 2]]
+Completed 200 OK in 16ms (Views: 10.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/items/2.json" for ::1 at 2016-06-28 18:31:51 -0400
+Processing by Api::ItemsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 47ms (Views: 39.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/items/3.json" for ::1 at 2016-06-28 18:31:53 -0400
+Processing by Api::ItemsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.7ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 20ms (Views: 7.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2016-06-28 18:32:00 -0400
